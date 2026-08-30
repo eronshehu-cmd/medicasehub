@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" width="820" height="400" role="img" aria-labelledby="diagTitle diagDesc">
+  <title id="diagTitle">Neck burn scar contracture</title>
+  <desc id="diagDesc">Two side-profile diagrams. On the left, an uninjured neck: the chin clears the chest and the neck extends freely. On the right, a contracted neck: scar tissue across the front of the neck has shortened and drawn the chin down onto the chest.</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f7a73"/>
+    </marker>
+    <style>
+      .body   { fill: #eef3f7; stroke: #0a1f33; stroke-width: 2.2; stroke-linejoin: round; }
+      .lbl    { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.08em; fill: #3d6485; text-transform: uppercase; }
+      .lbl-b  { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 12.5px; letter-spacing: 0.08em; fill: #0a1f33; }
+      .cap    { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #12395c; }
+      .scar   { fill: none; stroke: #0f7a73; stroke-width: 9; stroke-linecap: round; }
+      .tick   { stroke: #ffffff; stroke-width: 1.6; }
+      .guide  { stroke: #d3dee7; stroke-width: 1.5; stroke-dasharray: 5 5; }
+      .tension{ stroke: #0f7a73; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect width="820" height="400" fill="#ffffff"/>
+
+  <!-- ============ PANEL A : normal ============ -->
+  <g>
+    <text class="lbl" x="60" y="42">A · Uninjured</text>
+
+    <!-- torso -->
+    <path class="body" d="M 90 310 L 104 246 C 112 230, 200 230, 208 246 L 222 310 Z"/>
+    <!-- neck -->
+    <path class="body" d="M 128 168 L 128 240 L 190 240 L 186 176 Z"/>
+    <!-- head -->
+    <path class="body" d="M 150 55 C 184 55, 206 82, 206 110 L 220 130 L 205 138 L 207 152 C 205 165, 192 175, 170 177 L 126 172 C 106 162, 100 142, 100 118 C 100 85, 116 55, 150 55 Z"/>
+
+    <!-- gap measurement between chin and chest -->
+    <line class="guide" x1="176" y1="180" x2="262" y2="180"/>
+    <line class="guide" x1="212" y1="248" x2="262" y2="248"/>
+    <line class="tension" x1="252" y1="180" x2="252" y2="248" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text class="lbl-b" x="264" y="218">chin–chest</text>
+    <text class="lbl-b" x="264" y="234">distance</text>
+
+    <text class="cap" x="60" y="352">Skin across the front of the neck is</text>
+    <text class="cap" x="60" y="372">elastic. The head lifts and turns freely.</text>
+  </g>
+
+  <!-- ============ PANEL B : contracture ============ -->
+  <g transform="translate(400,0)">
+    <text class="lbl" x="60" y="42">B · Untreated deep burn</text>
+
+    <!-- torso -->
+    <path class="body" d="M 90 310 L 104 246 C 112 230, 200 230, 208 246 L 222 310 Z"/>
+
+    <!-- head and neck rotated forward around the base of the neck -->
+    <g transform="rotate(38 158 224)">
+      <path class="body" d="M 128 168 L 128 240 L 190 240 L 186 176 Z"/>
+      <path class="body" d="M 150 55 C 184 55, 206 82, 206 110 L 220 130 L 205 138 L 207 152 C 205 165, 192 175, 170 177 L 126 172 C 106 162, 100 142, 100 118 C 100 85, 116 55, 150 55 Z"/>
+    </g>
+
+    <!-- contracted scar band running chin to chest -->
+    <path class="scar" d="M 196 192 Q 205 218 209 250"/>
+    <g class="tick">
+      <line x1="192" y1="202" x2="201" y2="199"/>
+      <line x1="196" y1="219" x2="205" y2="217"/>
+      <line x1="200" y1="236" x2="209" y2="235"/>
+    </g>
+
+    <!-- tension arrows pointing along the band -->
+    <line class="tension" x1="222" y1="196" x2="230" y2="176" marker-end="url(#arrow)"/>
+    <line class="tension" x1="226" y1="248" x2="234" y2="268" marker-end="url(#arrow)"/>
+    <text class="lbl-b" x="238" y="172">scar shortens</text>
+    <text class="lbl-b" x="242" y="278">in both directions</text>
+
+    <text class="cap" x="60" y="352">Scar has no elasticity. As it matures it</text>
+    <text class="cap" x="60" y="372">tightens, pulling the chin onto the chest.</text>
+  </g>
+
+  <!-- legend -->
+  <line x1="60" y1="392" x2="84" y2="392" class="scar" stroke-width="6"/>
+  <text class="lbl-b" x="94" y="396">Mature scar tissue</text>
+</svg>
