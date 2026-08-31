@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="900" height="340" role="img" aria-labelledby="tTitle tDesc">
+  <title id="tTitle">Normal scar, hypertrophic scar and keloid compared</title>
+  <desc id="tDesc">Three cross-sections of skin. A normal scar sits flat and stays within the wound edges. A hypertrophic scar is raised but still stays within the wound edges. A keloid rises higher and spreads sideways past the original wound edges into skin that was never injured.</desc>
+
+  <defs>
+    <style>
+      .epi   { fill: #dbe6ee; stroke: #0a1f33; stroke-width: 1.8; }
+      .derm  { fill: #f6f9fb; stroke: #0a1f33; stroke-width: 1.8; }
+      .scar  { fill: #0f7a73; fill-opacity: 0.22; stroke: #0f7a73; stroke-width: 2.2; }
+      .edge  { stroke: #b0413e; stroke-width: 1.6; stroke-dasharray: 4 4; }
+      .lbl   { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; fill: #0a1f33; }
+      .sub   { font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; fill: #12395c; }
+      .tiny  { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 10.5px; fill: #b0413e; letter-spacing: 0.06em; }
+    </style>
+  </defs>
+
+  <rect width="900" height="340" fill="#ffffff"/>
+
+  <!-- PANEL 1 : normal scar -->
+  <g transform="translate(40,0)">
+    <text class="lbl" x="0" y="36">Normal scar</text>
+
+    <!-- dermis + epidermis -->
+    <rect class="derm" x="0" y="120" width="230" height="70"/>
+    <rect class="epi"  x="0" y="104" width="230" height="18"/>
+
+    <!-- wound edges -->
+    <line class="edge" x1="92"  y1="66" x2="92"  y2="200"/>
+    <line class="edge" x1="138" y1="66" x2="138" y2="200"/>
+
+    <!-- scar body: flat, within edges -->
+    <path class="scar" d="M 92 104 L 138 104 L 136 168 L 94 168 Z"/>
+
+    <text class="sub" x="0" y="230">Flat. Stays inside the</text>
+    <text class="sub" x="0" y="249">original wound edges.</text>
+  </g>
+
+  <!-- PANEL 2 : hypertrophic -->
+  <g transform="translate(330,0)">
+    <text class="lbl" x="0" y="36">Hypertrophic scar</text>
+
+    <rect class="derm" x="0" y="120" width="230" height="70"/>
+    <rect class="epi"  x="0" y="104" width="230" height="18"/>
+
+    <line class="edge" x1="92"  y1="66" x2="92"  y2="200"/>
+    <line class="edge" x1="138" y1="66" x2="138" y2="200"/>
+
+    <!-- raised, but contained within the edges -->
+    <path class="scar" d="M 92 104 C 96 78, 134 78, 138 104 L 136 168 L 94 168 Z"/>
+
+    <text class="sub" x="0" y="230">Raised, but still inside</text>
+    <text class="sub" x="0" y="249">the edges. May settle</text>
+    <text class="sub" x="0" y="268">on its own over time.</text>
+  </g>
+
+  <!-- PANEL 3 : keloid -->
+  <g transform="translate(620,0)">
+    <text class="lbl" x="0" y="36">Keloid</text>
+
+    <rect class="derm" x="0" y="120" width="230" height="70"/>
+    <rect class="epi"  x="0" y="104" width="230" height="18"/>
+
+    <line class="edge" x1="92"  y1="66" x2="92"  y2="200"/>
+    <line class="edge" x1="138" y1="66" x2="138" y2="200"/>
+
+    <!-- overhangs both edges, taller -->
+    <path class="scar" d="M 92 104 C 46 96, 44 46, 115 44 C 186 46, 184 96, 138 104 L 136 168 L 94 168 Z"/>
+
+    <text class="tiny" x="30" y="214">past the edge</text>
+    <text class="tiny" x="150" y="214">past the edge</text>
+
+    <text class="sub" x="0" y="240">Grows past the wound into</text>
+    <text class="sub" x="0" y="259">skin that was never injured.</text>
+    <text class="sub" x="0" y="278">Does not regress.</text>
+  </g>
+
+  <!-- legend -->
+  <line class="edge" x1="40" y1="308" x2="70" y2="308"/>
+  <text class="sub" x="80" y="313">Edges of the original wound</text>
+</svg>
