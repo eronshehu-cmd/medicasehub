@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" width="820" height="440" role="img" aria-labelledby="kTitle kDesc">
+  <title id="kTitle">What is actually removed in a knee replacement</title>
+  <desc id="kDesc">Two front views of a knee. On the left, the worn joint with dashed lines marking the cuts: roughly nine millimetres from the end of the thigh bone and roughly nine millimetres from the top of the shin bone. On the right, the same knee with metal caps over the cut surfaces and a plastic spacer between them. The implant is about as thick as the bone removed, so leg length is unchanged.</desc>
+
+  <defs>
+    <style>
+      .bone   { fill: #f4f0e8; stroke: #0a1f33; stroke-width: 2.4; stroke-linejoin: round; }
+      .cart   { fill: #dbe6ee; stroke: none; }
+      .worn   { fill: none; stroke: #b0413e; stroke-width: 2.6; stroke-linecap: round; }
+      .cutln  { stroke: #b0413e; stroke-width: 2; stroke-dasharray: 6 4; }
+      .gone   { fill: #b0413e; fill-opacity: 0.16; stroke: none; }
+      .metal  { fill: #8f9aa5; stroke: #0a1f33; stroke-width: 2.2; stroke-linejoin: round; }
+      .poly   { fill: #f7f5ee; stroke: #0a1f33; stroke-width: 2.2; }
+      .dim    { stroke: #0a1f33; stroke-width: 1.4; }
+      .step   { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; fill: #0a1f33; }
+      .tag    { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 11px; fill: #3d6485; }
+      .tagr   { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 11px; fill: #b0413e; }
+      .sub    { font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; fill: #12395c; }
+    </style>
+  </defs>
+
+  <rect width="820" height="440" fill="#ffffff"/>
+
+  <!-- PANEL A : what comes off -->
+  <g transform="translate(60,0)">
+    <text class="step" x="0" y="36">Before</text>
+
+    <path class="bone" d="M 118 60 L 182 60 L 194 140 Q 200 178 170 190 Q 153 194 150 170 Q 147 194 130 190 Q 100 178 106 140 Z"/>
+    <path class="gone" d="M 108 168 L 192 168 Q 198 180 170 190 Q 153 194 150 170 Q 147 194 130 190 Q 102 180 108 168 Z"/>
+    <path class="cutln" d="M 96 168 L 204 168"/>
+
+    <path class="bone" d="M 96 214 L 204 214 L 196 252 L 188 350 L 112 350 L 104 252 Z"/>
+    <path class="gone" d="M 96 214 L 204 214 L 202 232 L 98 232 Z"/>
+    <path class="cutln" d="M 88 232 L 212 232"/>
+
+    <path class="worn" d="M 118 200 L 138 200 M 162 200 L 184 200"/>
+    <text class="tagr" x="216" y="204">worn surfaces</text>
+
+    <line class="dim" x1="82" y1="168" x2="82" y2="190"/>
+    <line class="dim" x1="76" y1="168" x2="88" y2="168"/>
+    <line class="dim" x1="76" y1="190" x2="88" y2="190"/>
+    <text class="tag" x="24" y="184">~9 mm</text>
+
+    <line class="dim" x1="82" y1="214" x2="82" y2="232"/>
+    <line class="dim" x1="76" y1="214" x2="88" y2="214"/>
+    <line class="dim" x1="76" y1="232" x2="88" y2="232"/>
+    <text class="tag" x="24" y="230">~9 mm</text>
+
+    <text class="sub" x="0" y="392">Shaded bone is removed. About a</text>
+    <text class="sub" x="0" y="411">centimetre from each surface.</text>
+  </g>
+
+  <!-- PANEL B : what goes on -->
+  <g transform="translate(460,0)">
+    <text class="step" x="0" y="36">After</text>
+
+    <path class="bone" d="M 118 60 L 182 60 L 194 140 L 194 168 L 106 168 L 106 140 Z"/>
+    <path class="metal" d="M 102 164 L 198 164 Q 204 182 172 194 Q 154 198 150 174 Q 146 198 128 194 Q 96 182 102 164 Z"/>
+
+    <path class="poly" d="M 100 198 L 200 198 L 200 214 L 100 214 Z"/>
+    <path class="metal" d="M 96 214 L 204 214 L 202 230 L 98 230 Z"/>
+    <path class="bone" d="M 98 230 L 202 230 L 196 252 L 188 350 L 112 350 L 104 252 Z"/>
+
+    <text class="tag" x="216" y="180">metal cap</text>
+    <text class="tag" x="216" y="210">plastic spacer</text>
+    <text class="tag" x="216" y="230">metal tray</text>
+
+    <text class="sub" x="0" y="392">The implant is about as thick as the</text>
+    <text class="sub" x="0" y="411">bone taken, so leg length is unchanged.</text>
+  </g>
+</svg>
