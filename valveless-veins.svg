@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="860" height="420" role="img" aria-labelledby="vTitle vDesc">
+  <title id="vTitle">Why infection can travel backwards from a tooth to the brain</title>
+  <desc id="vDesc">Two panels. On the left, a normal vein in the limbs contains one-way valves, so blood and anything in it can only move toward the heart. On the right, the veins draining the face and jaw have no valves, so flow can reverse, and infection at a tooth root can travel backwards into the venous spaces inside the skull.</desc>
+
+  <defs>
+    <marker id="fwd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b5c8a"/>
+    </marker>
+    <marker id="bad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b0413e"/>
+    </marker>
+    <style>
+      .vessel { fill: #eaf1f7; stroke: #2b5c8a; stroke-width: 2.4; }
+      .valve  { fill: #ffffff; stroke: #2b5c8a; stroke-width: 2.2; }
+      .flow   { stroke: #2b5c8a; stroke-width: 2.8; fill: none; stroke-linecap: round; }
+      .back   { stroke: #b0413e; stroke-width: 3.2; fill: none; stroke-linecap: round; }
+      .head   { fill: #fdf9f5; stroke: #0a1f33; stroke-width: 2.4; }
+      .brain  { fill: #e6dbe8; stroke: #0a1f33; stroke-width: 2; }
+      .tooth  { fill: #fbf7ee; stroke: #0a1f33; stroke-width: 2; }
+      .pus    { fill: #b0413e; }
+      .step   { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; fill: #0a1f33; }
+      .tag    { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: 0.06em; fill: #3d6485; }
+      .tagr   { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: 0.06em; fill: #b0413e; }
+      .sub    { font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; fill: #12395c; }
+    </style>
+  </defs>
+
+  <rect width="860" height="420" fill="#ffffff"/>
+
+  <!-- PANEL A : a valved vein -->
+  <g transform="translate(50,0)">
+    <text class="step" x="0" y="38">Veins in the limbs</text>
+
+    <rect class="vessel" x="60" y="70" width="72" height="230" rx="14"/>
+
+    <path class="valve" d="M 62 140 Q 96 162 130 140 L 130 152 Q 96 174 62 152 Z"/>
+    <path class="valve" d="M 62 216 Q 96 238 130 216 L 130 228 Q 96 250 62 228 Z"/>
+
+    <path class="flow" d="M 96 288 L 96 92" marker-end="url(#fwd)"/>
+
+    <path class="back" d="M 168 130 L 168 178"/>
+    <path class="back" d="M 158 178 L 168 190 L 178 178"/>
+    <text class="tagr" x="146" y="212">blocked</text>
+
+    <text class="tag" x="0" y="330">one-way valves</text>
+    <text class="sub" x="0" y="366">Blood moves toward the heart</text>
+    <text class="sub" x="0" y="385">and cannot run back.</text>
+  </g>
+
+  <!-- PANEL B : the valveless route -->
+  <g transform="translate(400,0)">
+    <text class="step" x="0" y="38">Veins of the face and jaw</text>
+
+    <!-- head profile facing right -->
+    <path class="head" d="M 150 78 C 96 78, 66 118, 66 168 C 66 208, 78 236, 106 250 L 106 286 L 176 292 C 206 292, 224 278, 228 258 L 226 240 L 244 228 L 228 210 C 226 168, 206 78, 150 78 Z"/>
+    <ellipse class="brain" cx="140" cy="152" rx="52" ry="42"/>
+    <text class="tag" x="112" y="120">brain</text>
+
+    <!-- tooth in the lower jaw with an abscess at the root -->
+    <path class="tooth" d="M 158 268 L 178 268 L 176 284 L 170 292 L 166 284 L 160 292 L 156 284 Z"/>
+    <circle class="pus" cx="168" cy="292" r="6"/>
+    <text class="tagr" x="150" y="316">abscess at the root</text>
+
+    <!-- backwards route into the skull -->
+    <path class="back" d="M 168 284 C 190 262, 196 226, 178 196 C 168 180, 156 172, 146 168" marker-end="url(#bad)"/>
+    <text class="tagr" x="196" y="196">no valves</text>
+    <text class="tagr" x="196" y="212">to stop it</text>
+
+    <text class="sub" x="0" y="366">Flow can reverse, so infection at a</text>
+    <text class="sub" x="0" y="385">tooth root can travel up into the skull.</text>
+  </g>
+</svg>
