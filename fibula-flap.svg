@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="900" height="360" role="img" aria-labelledby="fTitle fDesc">
+  <title id="fTitle">How a free fibula flap rebuilds a jaw</title>
+  <desc id="fDesc">Three stages. First, a segment of the fibula, the slender outer bone of the lower leg, is raised together with its own artery and vein. Second, wedges of bone are cut from one side of the straight segment. Third, the segment is folded closed at those cuts to form the curve of a jaw, fixed with a plate, and its vessels are joined to vessels in the neck so the bone stays alive.</desc>
+
+  <defs>
+    <marker id="vflow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b0413e"/>
+    </marker>
+    <style>
+      .bone    { fill: #eef3f7; stroke: #0a1f33; stroke-width: 2.2; }
+      .harvest { fill: #0f7a73; fill-opacity: 0.32; stroke: #0f7a73; stroke-width: 2.4; }
+      .graft   { fill: #0f7a73; fill-opacity: 0.32; stroke: #0f7a73; stroke-width: 2.4; stroke-linejoin: round; }
+      .vessel  { stroke: #b0413e; stroke-width: 2.6; fill: none; stroke-linecap: round; }
+      .plate   { stroke: #3d6485; stroke-width: 3.4; fill: none; stroke-linecap: round; }
+      .cut     { stroke: #b0413e; stroke-width: 1.8; stroke-dasharray: 4 3; fill: none; }
+      .step    { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; fill: #0f7a73; }
+      .sub     { font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; fill: #12395c; }
+      .tag     { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 10.5px; fill: #3d6485; }
+      .tagr    { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 10.5px; fill: #b0413e; }
+    </style>
+  </defs>
+
+  <rect width="900" height="360" fill="#ffffff"/>
+
+  <!-- STAGE 1 : harvest -->
+  <g>
+    <text class="step" x="40" y="40">1 &#183; Raise</text>
+
+    <rect class="bone" x="92" y="70" width="36" height="200" rx="14"/>
+    <rect class="bone" x="146" y="70" width="20" height="200" rx="9"/>
+    <rect class="harvest" x="146" y="118" width="20" height="112" rx="6"/>
+
+    <path class="vessel" d="M 186 96 L 186 250" marker-end="url(#vflow)"/>
+    <path class="vessel" d="M 186 140 L 168 146"/>
+    <path class="vessel" d="M 186 176 L 168 180"/>
+    <path class="vessel" d="M 186 212 L 168 214"/>
+
+    <text class="tag" x="76" y="292">tibia</text>
+    <text class="tag" x="140" y="292">fibula</text>
+    <text class="tagr" x="176" y="292">vessels</text>
+
+    <text class="sub" x="40" y="322">A length of fibula is raised with</text>
+    <text class="sub" x="40" y="341">its own artery and vein.</text>
+  </g>
+
+  <!-- STAGE 2 : osteotomies -->
+  <g>
+    <text class="step" x="330" y="40">2 &#183; Cut</text>
+
+    <rect class="graft" x="330" y="150" width="230" height="26" rx="4"/>
+    <path d="M 380 150 L 396 150 L 388 176 Z" fill="#ffffff" stroke="#0f7a73" stroke-width="2"/>
+    <path d="M 437 150 L 453 150 L 445 176 Z" fill="#ffffff" stroke="#0f7a73" stroke-width="2"/>
+    <path d="M 494 150 L 510 150 L 502 176 Z" fill="#ffffff" stroke="#0f7a73" stroke-width="2"/>
+
+    <path class="cut" d="M 388 132 L 388 148"/>
+    <path class="cut" d="M 445 132 L 445 148"/>
+    <path class="cut" d="M 502 132 L 502 148"/>
+    <text class="tagr" x="360" y="124">wedges removed</text>
+
+    <text class="sub" x="330" y="322">Wedges are cut from one side so</text>
+    <text class="sub" x="330" y="341">the straight bone can bend.</text>
+  </g>
+
+  <!-- STAGE 3 : shape and reconnect -->
+  <g>
+    <text class="step" x="640" y="40">3 &#183; Shape</text>
+
+    <path class="graft" d="M 646 118 L 664 186 Q 745 232 826 186 L 844 118 L 822 118 L 806 176 Q 745 208 684 176 L 668 118 Z"/>
+
+    <path class="plate" d="M 660 150 Q 700 196 745 202 Q 790 196 830 150"/>
+    <circle cx="676" cy="168" r="3.6" fill="#3d6485"/>
+    <circle cx="745" cy="202" r="3.6" fill="#3d6485"/>
+    <circle cx="814" cy="168" r="3.6" fill="#3d6485"/>
+
+    <path class="vessel" d="M 690 250 Q 720 226 742 214" marker-end="url(#vflow)"/>
+    <text class="tagr" x="636" y="266">joined to neck vessels</text>
+
+    <text class="sub" x="640" y="322">Folded to the curve of a jaw,</text>
+    <text class="sub" x="640" y="341">plated, and re-perfused.</text>
+  </g>
+</svg>
