@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" role="img" aria-labelledby="tbTitle tbDesc">
+  <title id="tbTitle">How swallowed hair builds into a mass</title>
+  <desc id="tbDesc">Three stages inside a stomach. First, individual hairs catch in the folds of the stomach lining because hair is too smooth for the stomach to move along and too tough for digestive enzymes to break down. Second, more hair, food and mucus bind into a compact mass that grows to fill the stomach and take its shape. Third, a tail of the mass passes through the outlet of the stomach into the small intestine, which is called Rapunzel syndrome.</desc>
+
+  <defs>
+    <style>
+      .organ  { fill: #fdf4f1; stroke: #0a1f33; stroke-width: 2.4; stroke-linejoin: round; }
+      .tube   { fill: #fdf4f1; stroke: #0a1f33; stroke-width: 2.4; }
+      .fold   { stroke: #cbb0a8; stroke-width: 2; fill: none; stroke-linecap: round; }
+      .hair   { stroke: #3a2c26; stroke-width: 1.6; fill: none; stroke-linecap: round; }
+      .mass   { fill: #4a3a32; stroke: #2b211c; stroke-width: 2; }
+      .masstx { stroke: #7a6357; stroke-width: 1.4; fill: none; }
+      .step   { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; fill: #0a1f33; }
+      .tag    { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: 0.06em; fill: #3d6485; }
+      .tagr   { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: 0.06em; fill: #b0413e; }
+      .sub    { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #12395c; }
+    </style>
+  </defs>
+
+  <rect width="900" height="400" fill="#ffffff"/>
+
+  <!-- STAGE 1 -->
+  <g transform="translate(20,0)">
+    <text class="step" x="16" y="36">1 &#183; It catches</text>
+
+    <rect class="tube" x="96" y="52" width="24" height="34"/>
+    <path class="organ" d="M 96 84 C 60 100, 50 156, 72 198 C 96 244, 168 250, 192 208 C 210 176, 202 126, 172 104 C 150 88, 120 82, 96 84 Z"/>
+    <path class="tube" d="M 192 190 L 232 196 L 232 218 L 190 212 Z"/>
+
+    <g class="fold">
+      <path d="M 84 112 Q 104 122 84 132"/>
+      <path d="M 80 146 Q 100 156 80 166"/>
+      <path d="M 88 180 Q 108 190 88 200"/>
+      <path d="M 186 124 Q 166 134 186 144"/>
+      <path d="M 190 158 Q 170 168 190 178"/>
+    </g>
+
+    <g class="hair">
+      <path d="M 96 124 Q 116 130 110 144 Q 104 156 120 158"/>
+      <path d="M 176 140 Q 156 148 162 162"/>
+      <path d="M 104 186 Q 124 180 130 194"/>
+    </g>
+
+    <text class="tag" x="16" y="288">Hair is too smooth to be pushed</text>
+    <text class="sub" x="16" y="316">Digestive enzymes cannot break</text>
+    <text class="sub" x="16" y="335">it down, and it snags in the folds</text>
+    <text class="sub" x="16" y="354">instead of moving on.</text>
+  </g>
+
+  <!-- STAGE 2 -->
+  <g transform="translate(320,0)">
+    <text class="step" x="16" y="36">2 &#183; It compacts</text>
+
+    <rect class="tube" x="96" y="52" width="24" height="34"/>
+    <path class="organ" d="M 96 84 C 60 100, 50 156, 72 198 C 96 244, 168 250, 192 208 C 210 176, 202 126, 172 104 C 150 88, 120 82, 96 84 Z"/>
+    <path class="tube" d="M 192 190 L 232 196 L 232 218 L 190 212 Z"/>
+
+    <path class="mass" d="M 104 104 C 78 120, 70 160, 88 190 C 108 224, 160 228, 178 200 C 194 174, 188 132, 164 116 C 146 104, 122 98, 104 104 Z"/>
+    <g class="masstx">
+      <path d="M 100 130 Q 130 120 160 136"/>
+      <path d="M 92 156 Q 128 148 172 160"/>
+      <path d="M 98 182 Q 132 176 168 184"/>
+    </g>
+
+    <text class="tag" x="16" y="288">It takes the shape of the stomach</text>
+    <text class="sub" x="16" y="316">Food and mucus bind the hair into</text>
+    <text class="sub" x="16" y="335">one solid mass, moulded to the</text>
+    <text class="sub" x="16" y="354">space it is filling.</text>
+  </g>
+
+  <!-- STAGE 3 -->
+  <g transform="translate(620,0)">
+    <text class="step" x="16" y="36">3 &#183; It grows a tail</text>
+
+    <rect class="tube" x="96" y="52" width="24" height="34"/>
+    <path class="organ" d="M 96 84 C 60 100, 50 156, 72 198 C 96 244, 168 250, 192 208 C 210 176, 202 126, 172 104 C 150 88, 120 82, 96 84 Z"/>
+    <path class="tube" d="M 192 190 L 246 198 C 262 202, 264 224, 250 232 L 214 240 L 190 212 Z"/>
+
+    <path class="mass" d="M 104 104 C 78 120, 70 160, 88 190 C 108 224, 160 228, 178 200 C 194 174, 188 132, 164 116 C 146 104, 122 98, 104 104 Z"/>
+    <path class="mass" d="M 176 198 L 244 208 C 254 211, 254 222, 244 224 L 200 230 Z"/>
+    <g class="masstx">
+      <path d="M 100 140 Q 134 130 166 146"/>
+      <path d="M 94 172 Q 132 164 174 176"/>
+    </g>
+
+    <text class="tagr" x="196" y="262">Rapunzel syndrome</text>
+
+    <text class="sub" x="16" y="316">Once a tail passes into the small</text>
+    <text class="sub" x="16" y="335">intestine, it can obstruct the bowel</text>
+    <text class="sub" x="16" y="354">or wear a hole through the wall.</text>
+  </g>
+</svg>
