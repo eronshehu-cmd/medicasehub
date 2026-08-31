@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 470" width="840" height="470" role="img" aria-labelledby="cmTitle cmDesc">
+  <title id="cmTitle">Where blood goes when the liver is scarred</title>
+  <desc id="cmDesc">A front view of the trunk. Blood from the gut normally travels through the portal vein into the liver. When the liver is scarred, pressure rises and the blood takes three main detours back to the general circulation: upward into veins at the lower gullet, forward through a reopened fetal vein at the navel where it becomes visible on the skin, and downward into veins around the rectum. The visible route at the navel is the least dangerous of the three.</desc>
+
+  <defs>
+    <marker id="pflow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b5c8a"/>
+    </marker>
+    <style>
+      .torso  { fill: #fdf9f5; stroke: #0a1f33; stroke-width: 2.4; stroke-linejoin: round; }
+      .liver  { fill: #cbb3a6; stroke: #0a1f33; stroke-width: 2.2; }
+      .scar   { stroke: #7a5c4d; stroke-width: 2; }
+      .gut    { fill: #e6ddd2; stroke: #0a1f33; stroke-width: 1.8; }
+      .portal { stroke: #2b5c8a; stroke-width: 7; fill: none; stroke-linecap: round; }
+      .coll   { stroke: #2b5c8a; stroke-width: 4; fill: none; stroke-linecap: round; }
+      .danger { stroke: #b0413e; stroke-width: 4.5; fill: none; stroke-linecap: round; }
+      .skinv  { stroke: #4a6fa0; stroke-width: 3; fill: none; stroke-linecap: round; }
+      .block  { stroke: #b0413e; stroke-width: 3.4; stroke-linecap: round; }
+      .lbl    { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.08em; fill: #0a1f33; }
+      .lblr   { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.08em; fill: #b0413e; }
+      .lblb   { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.08em; fill: #2b5c8a; }
+      .note   { font-family: system-ui, -apple-system, sans-serif; font-size: 12.5px; fill: #3d6485; }
+      .step   { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; fill: #0a1f33; }
+    </style>
+  </defs>
+
+  <rect width="840" height="470" fill="#ffffff"/>
+
+  <text class="step" x="40" y="34">Where the blood detours</text>
+
+  <!-- torso -->
+  <path class="torso" d="M 330 56 L 470 56 Q 494 60 498 108 L 508 250 Q 512 344 500 412 L 300 412 Q 288 344 292 250 L 302 108 Q 306 60 330 56 Z"/>
+
+  <!-- oesophagus with varices -->
+  <rect x="386" y="56" width="26" height="86" rx="9" fill="#f1ece4" stroke="#0a1f33" stroke-width="1.8"/>
+  <path class="danger" d="M 392 74 Q 382 88 392 102 Q 382 116 392 130"/>
+  <path class="danger" d="M 406 74 Q 416 88 406 102 Q 416 116 406 130"/>
+
+  <!-- liver, patient's right -->
+  <path class="liver" d="M 300 148 Q 300 140 314 140 L 376 142 Q 392 146 388 176 Q 384 208 356 214 Q 316 218 304 196 Q 298 172 300 148 Z"/>
+  <g class="scar">
+    <path d="M 314 158 L 336 172"/>
+    <path d="M 330 152 L 352 166"/>
+    <path d="M 316 184 L 340 196"/>
+    <path d="M 348 180 L 370 190"/>
+  </g>
+  <text class="lbl" x="292" y="132">scarred liver</text>
+
+  <!-- gut and portal vein into the liver -->
+  <ellipse class="gut" cx="410" cy="288" rx="58" ry="34"/>
+  <text class="lbl" x="440" y="292">gut</text>
+  <path class="portal" d="M 384 272 L 356 218" marker-end="url(#pflow)"/>
+  <text class="lblb" x="336" y="252">portal vein</text>
+
+  <!-- blocked at the liver -->
+  <path class="block" d="M 346 208 L 366 226 M 366 208 L 346 226"/>
+  <text class="lblr" x="300" y="240">flow resisted</text>
+
+  <!-- collateral 1: up to oesophagus -->
+  <path class="danger" d="M 404 258 L 400 146" marker-end="url(#pflow)"/>
+  <text class="lblr" x="424" y="112">1 &#183; gullet veins</text>
+  <text class="note" x="424" y="128">invisible, bleed heavily</text>
+
+  <!-- collateral 2: forward to the navel -->
+  <circle cx="400" cy="322" r="7" fill="#f1ece4" stroke="#0a1f33" stroke-width="1.8"/>
+  <path class="coll" d="M 400 300 L 400 316"/>
+  <g class="skinv">
+    <path d="M 396 328 Q 372 340 366 364 Q 360 384 344 392"/>
+    <path d="M 404 328 Q 428 340 434 364 Q 440 384 456 392"/>
+    <path d="M 392 326 Q 360 330 344 346 Q 328 360 312 358"/>
+    <path d="M 408 326 Q 440 330 456 346 Q 472 360 488 358"/>
+    <path d="M 398 316 Q 378 300 356 296"/>
+    <path d="M 402 316 Q 422 300 444 296"/>
+  </g>
+  <text class="lblb" x="196" y="332">2 &#183; navel</text>
+  <text class="note" x="196" y="348">visible on the skin</text>
+
+  <!-- collateral 3: down to the rectum -->
+  <path class="coll" d="M 408 320 L 412 394" marker-end="url(#pflow)"/>
+  <text class="lblb" x="428" y="402">3 &#183; rectal veins</text>
+
+  <!-- key -->
+  <rect x="596" y="140" width="210" height="128" rx="4" fill="#f7fafb" stroke="#d3dee7" stroke-width="1.6"/>
+  <text class="step" x="612" y="166">The paradox</text>
+  <text class="note" x="612" y="192">The route you can see is the</text>
+  <text class="note" x="612" y="210">one least likely to kill.</text>
+  <text class="note" x="612" y="236">The gullet veins carry the</text>
+  <text class="note" x="612" y="254">same pressure, unseen.</text>
+</svg>
