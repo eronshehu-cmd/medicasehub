@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" width="760" height="330" role="img" aria-labelledby="rTitle rDesc">
+  <title id="rTitle">Normal red reflex compared with leukocoria</title>
+  <desc id="rDesc">Two eyes seen from the front under a camera flash. The eye on the left shows a normal red reflex, where the pupil glows red or orange. The eye on the right shows leukocoria, where the pupil reflects back white, which can be the first visible sign of retinoblastoma and needs same-week assessment.</desc>
+
+  <defs>
+    <radialGradient id="redReflex" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e8623f"/>
+      <stop offset="60%" stop-color="#b8342a"/>
+      <stop offset="100%" stop-color="#7d1f1a"/>
+    </radialGradient>
+    <radialGradient id="whiteReflex" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="65%" stop-color="#eef0ea"/>
+      <stop offset="100%" stop-color="#cfd3ca"/>
+    </radialGradient>
+    <style>
+      .sclera { fill: #fbfcfd; stroke: #0a1f33; stroke-width: 2.4; stroke-linejoin: round; }
+      .iris   { fill: #7d94a6; stroke: #0a1f33; stroke-width: 1.8; }
+      .lid    { fill: none; stroke: #0a1f33; stroke-width: 2.4; stroke-linecap: round; }
+      .lbl    { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 12.5px; letter-spacing: 0.1em; text-transform: uppercase; }
+      .ok     { fill: #0f7a73; }
+      .alert  { fill: #b0413e; }
+      .sub    { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #12395c; }
+      .note   { font-family: system-ui, -apple-system, sans-serif; font-size: 12.5px; fill: #3d6485; }
+    </style>
+  </defs>
+
+  <rect width="760" height="330" fill="#ffffff"/>
+
+  <!-- PANEL A : normal red reflex -->
+  <g transform="translate(60,0)">
+    <text class="lbl ok" x="0" y="40">Normal red reflex</text>
+
+    <path class="sclera" d="M 10 120 Q 130 44 250 120 Q 130 196 10 120 Z"/>
+    <circle class="iris" cx="130" cy="120" r="46"/>
+    <circle cx="130" cy="120" r="26" fill="url(#redReflex)"/>
+    <circle cx="120" cy="110" r="6" fill="#ffffff" fill-opacity="0.75"/>
+    <path class="lid" d="M 10 120 Q 130 44 250 120"/>
+
+    <text class="sub" x="0" y="240">Light passes to the retina and</text>
+    <text class="sub" x="0" y="260">reflects back red. Both eyes should</text>
+    <text class="sub" x="0" y="280">glow the same colour.</text>
+  </g>
+
+  <!-- PANEL B : leukocoria -->
+  <g transform="translate(420,0)">
+    <text class="lbl alert" x="0" y="40">Leukocoria</text>
+
+    <path class="sclera" d="M 10 120 Q 130 44 250 120 Q 130 196 10 120 Z"/>
+    <circle class="iris" cx="130" cy="120" r="46"/>
+    <circle cx="130" cy="120" r="26" fill="url(#whiteReflex)"/>
+    <circle cx="130" cy="120" r="26" fill="none" stroke="#b0413e" stroke-width="2.4"/>
+    <path class="lid" d="M 10 120 Q 130 44 250 120"/>
+
+    <text class="sub" x="0" y="240">A tumour behind the pupil reflects</text>
+    <text class="sub" x="0" y="260">the light back white. Often seen in</text>
+    <text class="sub" x="0" y="280">one eye only, or at some angles.</text>
+  </g>
+
+  <text class="note" x="60" y="316">A white pupil in a photograph is not a diagnosis, but it always needs an eye examination.</text>
+</svg>
