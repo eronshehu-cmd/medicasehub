@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" width="860" height="400" role="img" aria-labelledby="pTitle pDesc">
+  <title id="pTitle">Why retiform purpura is net-shaped</title>
+  <desc id="pDesc">Two panels. On the left, the branching network of small arteries that supplies an area of skin, with a clot blocking one trunk. On the right, the skin above it: the dark purple discolouration takes the exact branching shape of the blocked vessels, because every area downstream of the clot has lost its blood supply. The net-like outline is a map of the vascular tree.</desc>
+
+  <defs>
+    <style>
+      .skin    { fill: #fdf7f3; stroke: #d3dee7; stroke-width: 2; }
+      .tree    { fill: none; stroke: #b0413e; stroke-width: 3; stroke-linecap: round; }
+      .dead    { fill: none; stroke: #5c2a48; stroke-width: 15; stroke-linecap: round; stroke-opacity: 0.85; }
+      .deadhi  { fill: none; stroke: #7d3f5f; stroke-width: 7; stroke-linecap: round; stroke-opacity: 0.55; }
+      .clot    { fill: #0a1f33; }
+      .step    { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; fill: #0a1f33; }
+      .sub     { font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; fill: #12395c; }
+      .tagr    { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 10.5px; fill: #b0413e; }
+      .tagd    { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 10.5px; fill: #5c2a48; }
+    </style>
+  </defs>
+
+  <rect width="860" height="400" fill="#ffffff"/>
+
+  <!-- PANEL A : the vessels -->
+  <g transform="translate(40,0)">
+    <text class="step" x="0" y="36">Under the skin</text>
+
+    <rect class="skin" x="0" y="56" width="330" height="270" rx="4"/>
+
+    <path class="tree" d="M 165 310 L 165 250 M 165 250 L 112 200 M 165 250 L 220 200 M 112 200 L 76 156 M 112 200 L 133 150 M 220 200 L 204 150 M 220 200 L 258 158 M 76 156 L 55 122 M 76 156 L 92 118 M 133 150 L 122 110 M 133 150 L 154 114 M 204 150 L 193 110 M 204 150 L 224 116 M 258 158 L 253 118 M 258 158 L 284 126"/>
+
+    <circle class="clot" cx="165" cy="272" r="9"/>
+    <text class="tagr" x="182" y="278">clot blocks the trunk</text>
+    <text class="tagr" x="182" y="294">feeding all of this</text>
+
+    <text class="sub" x="0" y="358">Small arteries branch as they rise</text>
+    <text class="sub" x="0" y="377">toward the surface.</text>
+  </g>
+
+  <!-- PANEL B : the skin above -->
+  <g transform="translate(480,0)">
+    <text class="step" x="0" y="36">On the skin</text>
+
+    <rect class="skin" x="0" y="56" width="330" height="270" rx="4"/>
+
+    <path class="dead" d="M 165 310 L 165 250 M 165 250 L 112 200 M 165 250 L 220 200 M 112 200 L 76 156 M 112 200 L 133 150 M 220 200 L 204 150 M 220 200 L 258 158 M 76 156 L 55 122 M 76 156 L 92 118 M 133 150 L 122 110 M 133 150 L 154 114 M 204 150 L 193 110 M 204 150 L 224 116 M 258 158 L 253 118 M 258 158 L 284 126"/>
+    <path class="deadhi" d="M 165 250 L 112 200 M 165 250 L 220 200 M 112 200 L 133 150 M 220 200 L 258 158"/>
+
+    <text class="tagd" x="6" y="348">the outline is the vascular tree</text>
+
+    <text class="sub" x="0" y="378">Everything downstream dies, in the shape of what fed it.</text>
+  </g>
+</svg>
