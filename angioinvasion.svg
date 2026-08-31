@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img" aria-labelledby="angTitle angDesc">
+  <title id="angTitle">Why this infection kills tissue so fast</title>
+  <desc id="angDesc">Two panels. On the left, fungal filaments grow through the wall of a small artery and into the channel inside it, where a clot forms. On the right, the vessel is blocked, and all the tissue it supplied has died. An antifungal drug travelling in the blood reaches the blockage and can go no further, which is why surgery to remove the dead tissue is required rather than optional.</desc>
+
+  <defs>
+    <marker id="dflow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f7a73"/>
+    </marker>
+    <style>
+      .tissue { fill: #fdf3ef; stroke: #d3dee7; stroke-width: 2; }
+      .dead   { fill: #6f5560; stroke: #4a3742; stroke-width: 2; fill-opacity: 0.85; }
+      .lumen  { fill: #f2c9c4; stroke: #b0413e; stroke-width: 2.6; }
+      .hypha  { stroke: #2f6b4f; stroke-width: 2.6; fill: none; stroke-linecap: round; }
+      .clot   { fill: #5c2a30; }
+      .drug   { stroke: #0f7a73; stroke-width: 3; fill: none; stroke-linecap: round; }
+      .blockx { stroke: #b0413e; stroke-width: 4; stroke-linecap: round; }
+      .step   { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; fill: #0a1f33; }
+      .tag    { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: 0.06em; }
+      .tg     { fill: #2f6b4f; } .tr { fill: #b0413e; } .tn { fill: #3d6485; } .tt { fill: #0f7a73; }
+      .sub    { font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; fill: #12395c; }
+    </style>
+  </defs>
+
+  <rect width="880" height="400" fill="#ffffff"/>
+
+  <!-- PANEL A : invasion -->
+  <g transform="translate(40,0)">
+    <text class="step" x="0" y="38">1 &#183; It grows into the vessel</text>
+
+    <rect class="tissue" x="0" y="72" width="360" height="200" rx="4"/>
+    <rect class="lumen" x="0" y="152" width="360" height="52"/>
+
+    <!-- hyphae branching down through tissue into the lumen -->
+    <g class="hypha">
+      <path d="M 150 84 L 158 122 L 152 158"/>
+      <path d="M 158 122 L 190 112"/>
+      <path d="M 158 122 L 132 108"/>
+      <path d="M 152 158 L 176 178 L 210 172"/>
+      <path d="M 152 158 L 138 182 L 116 190"/>
+      <path d="M 176 178 L 182 198"/>
+    </g>
+    <text class="tag tg" x="196" y="98">fungal filaments</text>
+
+    <ellipse class="clot" cx="244" cy="178" rx="34" ry="20"/>
+    <text class="tag tr" x="212" y="228">clot</text>
+
+    <text class="sub" x="0" y="306">The fungus does not digest tissue.</text>
+    <text class="sub" x="0" y="325">It grows through the wall of small</text>
+    <text class="sub" x="0" y="344">arteries and clots them off.</text>
+  </g>
+
+  <!-- PANEL B : downstream death -->
+  <g transform="translate(470,0)">
+    <text class="step" x="0" y="38">2 &#183; Everything downstream dies</text>
+
+    <rect class="tissue" x="0" y="72" width="370" height="200" rx="4"/>
+    <path class="dead" d="M 150 72 L 370 72 L 370 272 L 150 272 Z"/>
+
+    <rect class="lumen" x="0" y="152" width="150" height="52"/>
+    <ellipse class="clot" cx="150" cy="178" rx="26" ry="24"/>
+
+    <path class="drug" d="M 12 178 L 108 178" marker-end="url(#dflow)"/>
+    <text class="tag tt" x="10" y="146">antifungal in the blood</text>
+
+    <path class="blockx" d="M 176 162 L 200 194 M 200 162 L 176 194"/>
+    <text class="tag tr" x="210" y="140">cannot reach past here</text>
+
+    <text class="tag" fill="#ffffff" x="230" y="250">dead tissue</text>
+
+    <text class="sub" x="0" y="306">Drugs travel in blood. Tissue with no</text>
+    <text class="sub" x="0" y="325">blood gets no drug, which is why the</text>
+    <text class="sub" x="0" y="344">dead tissue has to be cut out.</text>
+  </g>
+</svg>
