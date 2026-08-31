@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 400" width="840" height="400" role="img" aria-labelledby="iTitle iDesc">
+  <title id="iTitle">Ischaemia time windows for replantation</title>
+  <desc id="iDesc">A comparison of how long amputated parts stay viable. Fingers, which contain no muscle, tolerate roughly 12 hours at room temperature and up to 24 hours cooled. Amputations above the wrist contain muscle and tolerate only about 6 hours warm and about 12 hours cooled. Cooling roughly doubles the available time in both cases.</desc>
+
+  <defs>
+    <style>
+      .warm  { fill: #b0413e; }
+      .cool  { fill: #0f7a73; }
+      .grid  { stroke: #d3dee7; stroke-width: 1; }
+      .axis  { stroke: #0a1f33; stroke-width: 1.8; }
+      .rowlbl{ font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; fill: #12395c; }
+      .grp   { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; fill: #0a1f33; }
+      .hr    { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 11px; fill: #3d6485; }
+      .val   { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 12px; fill: #ffffff; font-weight: 500; }
+      .key   { font-family: system-ui, -apple-system, sans-serif; font-size: 12.5px; fill: #12395c; }
+      .cap   { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #3d6485; }
+    </style>
+  </defs>
+
+  <rect width="840" height="400" fill="#ffffff"/>
+
+  <text class="grp" x="40" y="34">Ischaemia time: how long a part stays viable</text>
+
+  <!-- gridlines at 0, 6, 12, 18, 24 hours -->
+  <g>
+    <line class="grid" x1="230" y1="60" x2="230" y2="300"/>
+    <line class="grid" x1="375" y1="60" x2="375" y2="300"/>
+    <line class="grid" x1="520" y1="60" x2="520" y2="300"/>
+    <line class="grid" x1="665" y1="60" x2="665" y2="300"/>
+    <line class="grid" x1="810" y1="60" x2="810" y2="300"/>
+    <text class="hr" x="222" y="320">0h</text>
+    <text class="hr" x="367" y="320">6h</text>
+    <text class="hr" x="510" y="320">12h</text>
+    <text class="hr" x="655" y="320">18h</text>
+    <text class="hr" x="800" y="320">24h</text>
+  </g>
+
+  <!-- GROUP: fingers, no muscle -->
+  <text class="grp" x="40" y="86">Fingers</text>
+  <text class="cap" x="40" y="104">no muscle</text>
+
+  <rect class="warm" x="230" y="76" width="290" height="26" rx="3"/>
+  <text class="val" x="240" y="94">12 hours warm</text>
+
+  <rect class="cool" x="230" y="112" width="580" height="26" rx="3"/>
+  <text class="val" x="240" y="130">24 hours cooled</text>
+
+  <!-- GROUP: above the wrist -->
+  <text class="grp" x="40" y="196">Above wrist</text>
+  <text class="cap" x="40" y="214">contains muscle</text>
+
+  <rect class="warm" x="230" y="186" width="145" height="26" rx="3"/>
+  <text class="val" x="240" y="204">6 hours warm</text>
+
+  <rect class="cool" x="230" y="222" width="290" height="26" rx="3"/>
+  <text class="val" x="240" y="240">12 hours cooled</text>
+
+  <line class="axis" x1="230" y1="60" x2="230" y2="300"/>
+
+  <!-- key -->
+  <rect class="warm" x="40" y="348" width="16" height="16" rx="2"/>
+  <text class="key" x="64" y="361">Room temperature</text>
+  <rect class="cool" x="220" y="348" width="16" height="16" rx="2"/>
+  <text class="key" x="244" y="361">Cooled correctly</text>
+  <text class="cap" x="410" y="361">Muscle dies first. That is why the limb clock runs faster.</text>
+</svg>
