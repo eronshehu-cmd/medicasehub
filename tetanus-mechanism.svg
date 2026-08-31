@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 420" width="840" height="420" role="img" aria-labelledby="tnTitle tnDesc">
+  <title id="tnTitle">How tetanus toxin locks muscles in contraction</title>
+  <desc id="tnDesc">Two panels. On the left, normal control: a motor neuron receives an excitatory signal telling it to fire and an inhibitory signal telling it to stop, so the muscle contracts and then relaxes. On the right, tetanus: the toxin blocks the inhibitory signal, so nothing tells the motor neuron to stop. It fires continuously and the muscle stays contracted.</desc>
+
+  <defs>
+    <marker id="exc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f7a73"/>
+    </marker>
+    <marker id="inh" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2b5c8a"/>
+    </marker>
+    <marker id="out" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0a1f33"/>
+    </marker>
+    <marker id="outhot" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b0413e"/>
+    </marker>
+    <style>
+      .cell    { fill: #eef3f7; stroke: #0a1f33; stroke-width: 2.2; }
+      .cellexc { fill: #e0f0ee; stroke: #0f7a73; stroke-width: 2.2; }
+      .cellinh { fill: #e2ecf5; stroke: #2b5c8a; stroke-width: 2.2; }
+      .celldead{ fill: #f2f2f2; stroke: #9aa9b6; stroke-width: 2.2; stroke-dasharray: 5 4; }
+      .cellhot { fill: #f7e3e2; stroke: #b0413e; stroke-width: 2.6; }
+      .axexc   { stroke: #0f7a73; stroke-width: 2.6; fill: none; }
+      .axinh   { stroke: #2b5c8a; stroke-width: 2.6; fill: none; }
+      .axdead  { stroke: #9aa9b6; stroke-width: 2.6; fill: none; stroke-dasharray: 5 4; }
+      .axout   { stroke: #0a1f33; stroke-width: 3; fill: none; }
+      .axhot   { stroke: #b0413e; stroke-width: 5.5; fill: none; }
+      .musrel  { fill: #ddc5c0; stroke: #0a1f33; stroke-width: 2.2; }
+      .mustight{ fill: #c99b95; stroke: #b0413e; stroke-width: 2.6; }
+      .blockx  { stroke: #b0413e; stroke-width: 4; stroke-linecap: round; }
+      .step    { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; fill: #0a1f33; }
+      .tag     { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: 0.06em; }
+      .tg      { fill: #0f7a73; } .tb { fill: #2b5c8a; } .tr { fill: #b0413e; } .tn { fill: #3d6485; }
+      .sub     { font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; fill: #12395c; }
+    </style>
+  </defs>
+
+  <rect width="840" height="420" fill="#ffffff"/>
+
+  <!-- PANEL A : normal -->
+  <g transform="translate(40,0)">
+    <text class="step" x="0" y="36">Normal control</text>
+
+    <circle class="cellexc" cx="70" cy="96" r="26"/>
+    <text class="tag tg" x="18" y="66">go signal</text>
+    <path class="axexc" d="M 88 116 L 132 168" marker-end="url(#exc)"/>
+
+    <circle class="cellinh" cx="252" cy="96" r="26"/>
+    <text class="tag tb" x="212" y="66">stop signal</text>
+    <path class="axinh" d="M 234 116 L 190 168" marker-end="url(#inh)"/>
+
+    <circle class="cell" cx="161" cy="196" r="34"/>
+    <text class="tag tn" x="196" y="200">motor neuron</text>
+
+    <path class="axout" d="M 161 232 L 161 274" marker-end="url(#out)"/>
+
+    <path class="musrel" d="M 128 284 Q 161 296 194 284 L 194 348 Q 161 336 128 348 Z"/>
+    <text class="tag tn" x="128" y="372">contracts, then relaxes</text>
+
+    <text class="sub" x="0" y="404">Both signals arrive. The muscle lets go.</text>
+  </g>
+
+  <!-- PANEL B : tetanus -->
+  <g transform="translate(460,0)">
+    <text class="step" x="0" y="36">Tetanus toxin</text>
+
+    <circle class="cellexc" cx="70" cy="96" r="26"/>
+    <text class="tag tg" x="18" y="66">go signal</text>
+    <path class="axexc" d="M 88 116 L 132 168" marker-end="url(#exc)"/>
+
+    <circle class="celldead" cx="252" cy="96" r="26"/>
+    <text class="tag tr" x="204" y="66">stop signal blocked</text>
+    <path class="axdead" d="M 234 116 L 208 146"/>
+    <path class="blockx" d="M 196 152 L 216 172 M 216 152 L 196 172"/>
+
+    <circle class="cellhot" cx="161" cy="196" r="34"/>
+    <text class="tag tr" x="196" y="200">fires without pause</text>
+
+    <path class="axhot" d="M 161 232 L 161 274" marker-end="url(#outhot)"/>
+
+    <path class="mustight" d="M 136 284 Q 161 306 186 284 L 186 348 Q 161 326 136 348 Z"/>
+    <text class="tag tr" x="122" y="372">stays contracted</text>
+
+    <text class="sub" x="0" y="404">Nothing tells it to stop.</text>
+  </g>
+</svg>
