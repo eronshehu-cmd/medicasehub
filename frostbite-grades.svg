@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" width="820" height="440" role="img" aria-labelledby="cgTitle cgDesc">
+  <title id="cgTitle">How severe frostbite is graded</title>
+  <desc id="cgDesc">A foot seen from above, divided by how far up the injury reaches. Grade one involves only the tip and settles after rewarming with no tissue lost. Grade two reaches the end segment of the toe and usually costs soft tissue only. Grade three reaches the middle and base segments and usually costs part of the toe. Grade four reaches back into the bones of the mid-foot and usually costs the whole toe or more.</desc>
+
+  <defs>
+    <style>
+      .foot   { fill: #fdf4f1; stroke: #0a1f33; stroke-width: 2.4; stroke-linejoin: round; }
+      .toe    { fill: #fdf4f1; stroke: #0a1f33; stroke-width: 2.2; }
+      .g1     { fill: #cfe3e1; }
+      .g2     { fill: #8fc4bd; }
+      .g3     { fill: #d99b62; }
+      .g4     { fill: #b0413e; }
+      .lvl    { stroke: #0a1f33; stroke-width: 1.6; stroke-dasharray: 5 4; }
+      .num    { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 13px; font-weight: 500; fill: #ffffff; }
+      .numd   { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 13px; font-weight: 500; fill: #0a1f33; }
+      .head   { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; fill: #0a1f33; }
+      .lbl    { font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; fill: #0a1f33; font-weight: 600; }
+      .body   { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #12395c; }
+      .foot-l { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 10.5px; fill: #3d6485; }
+    </style>
+  </defs>
+
+  <rect width="820" height="440" fill="#ffffff"/>
+
+  <text class="head" x="40" y="36">Depth of injury, by how far back it reaches</text>
+
+  <!-- foot, viewed from above -->
+  <g transform="translate(30,0)">
+    <path class="foot" d="M 82 380 C 66 336, 70 268, 88 218 C 100 184, 138 166, 172 170 C 208 174, 226 200, 228 240 C 232 296, 218 356, 202 384 C 176 408, 104 404, 82 380 Z"/>
+
+    <ellipse class="toe" cx="96"  cy="152" rx="17" ry="24"/>
+    <ellipse class="toe" cx="130" cy="136" rx="13" ry="19"/>
+    <ellipse class="toe" cx="158" cy="132" rx="12" ry="18"/>
+    <ellipse class="toe" cx="184" cy="136" rx="11" ry="16"/>
+    <ellipse class="toe" cx="206" cy="146" rx="10" ry="14"/>
+
+    <!-- level markers -->
+    <line class="lvl" x1="60" y1="132" x2="252" y2="132"/>
+    <line class="lvl" x1="60" y1="162" x2="252" y2="162"/>
+    <line class="lvl" x1="60" y1="196" x2="252" y2="196"/>
+    <line class="lvl" x1="60" y1="266" x2="252" y2="266"/>
+
+    <circle class="g1" cx="44" cy="132" r="13"/><text class="numd" x="40" y="137">1</text>
+    <circle class="g2" cx="44" cy="162" r="13"/><text class="numd" x="40" y="167">2</text>
+    <circle class="g3" cx="44" cy="196" r="13"/><text class="num"  x="40" y="201">3</text>
+    <circle class="g4" cx="44" cy="266" r="13"/><text class="num"  x="40" y="271">4</text>
+
+    <text class="foot-l" x="70" y="412">right foot, from above</text>
+  </g>
+
+  <!-- legend -->
+  <g transform="translate(330,0)">
+    <circle class="g1" cx="14" cy="86" r="13"/><text class="numd" x="10" y="91">1</text>
+    <text class="lbl" x="38" y="82">Tip only</text>
+    <text class="body" x="38" y="102">Disappears after rewarming. Nothing lost.</text>
+
+    <circle class="g2" cx="14" cy="162" r="13"/><text class="numd" x="10" y="167">2</text>
+    <text class="lbl" x="38" y="158">End segment of the toe</text>
+    <text class="body" x="38" y="178">Soft tissue may be lost. Bone usually survives.</text>
+
+    <circle class="g3" cx="14" cy="238" r="13"/><text class="num" x="10" y="243">3</text>
+    <text class="lbl" x="38" y="234">Middle and base of the toe</text>
+    <text class="body" x="38" y="254">Part of the toe is usually lost.</text>
+
+    <circle class="g4" cx="14" cy="314" r="13"/><text class="num" x="10" y="319">4</text>
+    <text class="lbl" x="38" y="310">Back into the mid-foot</text>
+    <text class="body" x="38" y="330">The whole toe or more is usually lost.</text>
+
+    <text class="body" x="0" y="392">Each digit is graded separately, and the</text>
+    <text class="body" x="0" y="412">grade is judged after the tissue has thawed.</text>
+  </g>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" width="920" height="420" role="img" aria-labelledby="fbTitle fbDesc">
+  <title id="fbTitle">Why the best frostbite drug arrives too late on Everest</title>
+  <desc id="fbDesc">A timeline in hours from the moment of frostbite. Above it, the descent from the summit through the high camps to a helicopter and on to Kathmandu, which typically takes between 48 and 72 hours. Below it, the treatment windows: clot-dissolving tPA works only within the first 24 hours, standard iloprost within 48 hours, and the extended iloprost window tested in this study runs to 72 hours. The arrival zone falls outside the tPA window entirely.</desc>
+
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0a1f33"/>
+    </marker>
+    <style>
+      .axis  { stroke: #0a1f33; stroke-width: 2; }
+      .grid  { stroke: #d3dee7; stroke-width: 1; }
+      .stop  { fill: #0a1f33; }
+      .arrive{ fill: #0f7a73; fill-opacity: 0.12; }
+      .tpa   { fill: #b0413e; fill-opacity: 0.75; }
+      .ilo   { fill: #7d94a6; fill-opacity: 0.85; }
+      .iloex { fill: #0f7a73; fill-opacity: 0.85; }
+      .hr    { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 11px; fill: #3d6485; }
+      .stg   { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 10.5px; fill: #0a1f33; }
+      .band  { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 11.5px; fill: #ffffff; letter-spacing: 0.06em; }
+      .lab   { font-family: ui-monospace, "IBM Plex Mono", monospace; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; fill: #0a1f33; }
+      .note  { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #12395c; }
+      .noter { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #b0413e; }
+    </style>
+  </defs>
+
+  <rect width="920" height="420" fill="#ffffff"/>
+
+  <!-- arrival zone -->
+  <rect class="arrive" x="519" y="60" width="214" height="264"/>
+  <text class="stg" fill="#0f7a73" x="524" y="76">climbers typically arrive here</text>
+
+  <!-- gridlines -->
+  <g class="grid">
+    <line x1="90" y1="60" x2="90" y2="324"/>
+    <line x1="304" y1="60" x2="304" y2="324"/>
+    <line x1="519" y1="60" x2="519" y2="324"/>
+    <line x1="733" y1="60" x2="733" y2="324"/>
+  </g>
+
+  <!-- the descent -->
+  <text class="lab" x="40" y="46">The descent</text>
+  <line class="axis" x1="90" y1="120" x2="850" y2="120" marker-end="url(#ar)"/>
+
+  <circle class="stop" cx="90" cy="120" r="6"/>
+  <text class="stg" x="76" y="104">8848 m</text>
+  <text class="stg" x="62" y="146">frostbite,</text>
+  <text class="stg" x="62" y="160">summit day</text>
+
+  <circle class="stop" cx="197" cy="120" r="5"/>
+  <text class="stg" x="176" y="104">8000 m</text>
+  <text class="stg" x="176" y="146">camp 4</text>
+
+  <circle class="stop" cx="358" cy="120" r="5"/>
+  <text class="stg" x="336" y="104">6400 m</text>
+  <text class="stg" x="336" y="146">camp 2</text>
+
+  <circle class="stop" cx="519" cy="120" r="5"/>
+  <text class="stg" x="500" y="104">helicopter</text>
+
+  <circle class="stop" cx="680" cy="120" r="6"/>
+  <text class="stg" x="654" y="104">Kathmandu</text>
+  <text class="stg" x="654" y="146">first infusion</text>
+
+  <!-- treatment windows -->
+  <text class="lab" x="40" y="212">Treatment windows</text>
+
+  <rect class="tpa" x="90" y="226" width="214" height="26" rx="3"/>
+  <text class="band" x="100" y="244">tPA &#8212; 24 h only</text>
+
+  <rect class="ilo" x="90" y="262" width="429" height="26" rx="3"/>
+  <text class="band" x="100" y="280">Iloprost, standard &#8212; 48 h</text>
+
+  <rect class="iloex" x="90" y="298" width="643" height="26" rx="3"/>
+  <text class="band" x="100" y="316">Iloprost, extended &#8212; up to 72 h</text>
+
+  <!-- hour axis -->
+  <line class="axis" x1="90" y1="340" x2="850" y2="340"/>
+  <text class="hr" x="84" y="358">0 h</text>
+  <text class="hr" x="292" y="358">24 h</text>
+  <text class="hr" x="507" y="358">48 h</text>
+  <text class="hr" x="721" y="358">72 h</text>
+
+  <text class="noter" x="40" y="390">The clot-dissolving drug expires before the climber reaches the road.</text>
+  <text class="note" x="40" y="410">Iloprost is the treatment that is still available by the time anyone can be treated.</text>
+</svg>
