@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Speed Insights</title>
+</head>
+<body>
+  <h1>Testing Vercel Speed Insights</h1>
+  <p>Check the browser console for Speed Insights initialization.</p>
+  <script src="/vercel-speed-insights.js" defer></script>
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        if (window.VercelSpeedInsights) {
+          console.log('✓ Vercel Speed Insights loaded successfully');
+        }
+        if (window.si) {
+          console.log('✓ Speed Insights queue initialized');
+        }
+      }, 100);
+    });
+  </script>
+</body>
+</html>
