@@ -1,0 +1,13 @@
+{
+  "name": "medicasehub",
+  "version": "1.0.0",
+  "description": "Real surgical cases, anonymised and explained",
+  "type": "module",
+  "scripts": {
+    "build": "node build-insights.js"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.14"
+  },
+  "private": true
+}
