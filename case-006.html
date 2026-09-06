@@ -176,7 +176,7 @@ h1{font-family:var(--serif);font-size:clamp(31px,7.4vw,60px);letter-spacing:-.02
 .src .pin{font-family:var(--mono);font-size:12px;color:var(--ink);border:1px solid var(--rule);background:#fff;padding:2px 7px;border-radius:2px;white-space:nowrap}
 
 /* ---- related ---- */
-.rel{border-top:1px solid var(--rule);background:var(--sheet)}
+.rel ol{list-style:none;margin:0;padding:0}.rel .row{display:grid;grid-template-columns:minmax(0,1fr);gap:2px;padding:14px 0;text-decoration:none;color:inherit;border-bottom:1px solid var(--rule)}.rel .row:hover{background:var(--paper-2)}.rel .meta{display:flex;gap:10px;align-items:baseline;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}.rel .ti{font-family:var(--serif);font-size:19px;line-height:1.22;letter-spacing:-.01em;display:block;margin:3px 0 0;color:var(--ink)}.rel .dek{font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--ink-2);display:block;margin:4px 0 0;max-width:62ch}.rel .hasfig{display:none}.rel{border-top:1px solid var(--rule);background:var(--sheet)}
 .rel .wrap{padding:26px 20px 34px}
 .rel h2{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:400;margin-bottom:14px}
 .rel ul{list-style:none;margin:0;padding:0;display:grid;gap:0}
@@ -260,7 +260,7 @@ footer p{max-width:52ch}
     <div class="prose">
       <section class="sec" id="s1" data-t="day 0" data-l="the injury"><div class="sec-h"><span class='tstamp'>Day 0 · something small went in</span><h2>The fall</h2></div><p>On an April evening in 2024, a 67-year-old man fell face-first and felt what he described as a small object enter his left eye. He had immediate pain, bleeding and blurred vision, and went to his local hospital.</p>
 
-    <p>The CT there showed soft tissue injury on the left side of the face, contusion of the eyeball and the medial rectus muscle, fractures of the maxillary sinus roof and the medial orbital wall, blood in the maxillary and ethmoid sinuses — and pathological gas formation.</p>
+    <p>The CT there showed soft tissue injury on the left side of the face, contusion of the eyeball and the medial rectus muscle, fractures of the maxillary sinus roof and the medial orbital wall, blood in the maxillary and ethmoid sinuses, and pathological gas formation.</p>
 
     <p>He was transferred for surgery, where debridement exposed a wound 5 mm deep and a small wooden fragment was removed. The wound was sutured. It healed without infection.</p></section><section class="sec" id="s2" data-t="day 0" data-l="wood reads as air"><div class="sec-h"><span class='tstamp'>Day 0 · the report was not careless</span><h2>Why the scan was wrong</h2></div><p>Dry wood is very low in density. On CT it can look like air, fat or muscle, and a linear tract of wood inside the orbit reads convincingly as a streak of trapped gas. This is a documented and recurring trap in orbital trauma, and it is why organic foreign bodies are missed in a way that metal and glass are not.</p>
 
@@ -303,23 +303,13 @@ footer p{max-width:52ch}
       <div class="src"><p>Adapted for a general readership from Yang D, Peng S-X, Li J, Yi M-T, Liang H. &ldquo;Foreign body removal from nasal cavity in transorbital injury of long bamboo stick penetrating nasopharyngeal region: a case report.&rdquo; <em>Frontiers in Surgery</em> 2026;13:1779911, published under CC BY 4.0. Figures reproduced under the same licence. The patient gave written consent for publication. This article is not medical advice. <a href="disclaimer.html">Read the full disclaimer</a>.</p></div>
       <div class="ad" aria-hidden="true"><div><span class="lab">Advertisement</span><div id="ezoic-pub-ad-placeholder-102"></div></div></div>
       <section class="rel">
-        <h2 class="lab">Related cases</h2>
-        <div class="case-grid"><a class="case-card" href="case-008.html">
-        <div class="case-id"><span>MC-008</span></div>
-        <h3>Parasitic twin</h3>
-        <p>No heart of its own, perfused entirely by its sibling.</p>
-      </a>
-      <a class="case-card" href="case-007.html">
-        <div class="case-id"><span>MC-007</span></div>
-        <h3>Keloid vs hypertrophic scar</h3>
-        <p>One crosses the wound edges. One does not.</p>
-      </a>
-      <a class="case-card" href="case-005.html">
-        <div class="case-id"><span>MC-005</span></div>
-        <h3>Viper bite coagulopathy</h3>
-        <p>His blood stopped clotting. A normal scan kept him out of theatre.</p>
-      </a></div>
-      </section>
+<h2 class="lab">Related cases</h2>
+<ol>
+<li><a class="row" href="case-008.html"><span class="meta"><span>MC-008</span><span>Children</span><span class="hasfig"></span></span><span class="ti">Parasitic twin: the twin with no heart</span><span class="dek">A second head with eyes and lips, and no circulation of its own. Waiting would have made her weaker, not safer.</span></a></li>
+<li><a class="row" href="case-007.html"><span class="meta"><span>MC-007</span><span>Reconstruction</span><span class="hasfig"></span></span><span class="ti">Keloid vs hypertrophic scar: fifteen years untreated</span><span class="dek">Minor cuts to the jaw, no treatment available, and fifteen years for a scar to become a disability.</span></a></li>
+<li><a class="row" href="case-005.html"><span class="meta"><span>MC-005</span><span>Emergency</span><span class="hasfig" title="Includes an original diagram"></span></span><span class="ti">Viper bite coagulopathy: the scan that showed nothing</span><span class="dek">Three hours after the bite his blood could no longer clot. A normal ultrasound is what kept him out of theatre.</span></a></li>
+</ol>
+</section>
       <p class="back"><a href="cases.html">&larr; All cases</a></p>
     </div>
   </div>
@@ -345,7 +335,7 @@ function set(sec){
   ticks.forEach(function(li){ li.classList.toggle('on', li.getAttribute('data-sec')===id); });
   var back=sec.classList.contains('fb');
   var rn=document.querySelector('.rail-now');
-  if(rn) rn.style.color = back ? 'var(--ink-2)' : 'var(--time)';
+  if(rn) rn.style.color = back ? 'var(--ink-2)': 'var(--time)';
   if(now) now.textContent=(back?'\u21a9 ':'')+(sec.getAttribute('data-t')||'');
   if(nowlab) nowlab.textContent=sec.getAttribute('data-l')||'';
 }

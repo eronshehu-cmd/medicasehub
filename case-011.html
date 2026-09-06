@@ -176,7 +176,7 @@ h1{font-family:var(--serif);font-size:clamp(31px,7.4vw,60px);letter-spacing:-.02
 .src .pin{font-family:var(--mono);font-size:12px;color:var(--ink);border:1px solid var(--rule);background:#fff;padding:2px 7px;border-radius:2px;white-space:nowrap}
 
 /* ---- related ---- */
-.rel{border-top:1px solid var(--rule);background:var(--sheet)}
+.rel ol{list-style:none;margin:0;padding:0}.rel .row{display:grid;grid-template-columns:minmax(0,1fr);gap:2px;padding:14px 0;text-decoration:none;color:inherit;border-bottom:1px solid var(--rule)}.rel .row:hover{background:var(--paper-2)}.rel .meta{display:flex;gap:10px;align-items:baseline;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}.rel .ti{font-family:var(--serif);font-size:19px;line-height:1.22;letter-spacing:-.01em;display:block;margin:3px 0 0;color:var(--ink)}.rel .dek{font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--ink-2);display:block;margin:4px 0 0;max-width:62ch}.rel .hasfig{display:none}.rel{border-top:1px solid var(--rule);background:var(--sheet)}
 .rel .wrap{padding:26px 20px 34px}
 .rel h2{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:400;margin-bottom:14px}
 .rel ul{list-style:none;margin:0;padding:0;display:grid;gap:0}
@@ -258,7 +258,7 @@ footer p{max-width:52ch}
   <div class="body">
     <div class="rail" id="rail"><div class="rail-now"><span id="rnow">1997</span><i id="rnowlab">the injury</i></div><ol><li class="" data-sec="s1"><b>1997</b><span>the injury</span></li><li class="" data-sec="s2"><b>15 years</b><span>20+ operations</span></li><li class="" data-sec="s3"><b>2012</b><span>36-hour transplant</span></li><li class="nt" data-sec="s4"><b>2016–19</b><span>kidneys fail</span></li></ol></div>
     <div class="prose">
-      <section class="sec" id="s1" data-t="1997–2012" data-l="rebuilding"><div class="sec-h"><span class='tstamp'>15 years · what could be rebuilt</span><h2>What autologous reconstruction can do</h2></div><p>The standard approach to a destroyed jaw is to build a new one from the patient's own body, and the workhorse for it is the fibula — the slender outer bone of the lower leg. It can be removed along most of its length without the leg losing function, because the tibia carries the weight.</p>
+      <section class="sec" id="s1" data-t="1997–2012" data-l="rebuilding"><div class="sec-h"><span class='tstamp'>15 years · what could be rebuilt</span><h2>What autologous reconstruction can do</h2></div><p>The standard approach to a destroyed jaw is to build a new one from the patient's own body, and the workhorse for it is the fibula, the slender outer bone of the lower leg. It can be removed along most of its length without the leg losing function, because the tibia carries the weight.</p>
 
     <p>The technique is more ingenious than it sounds. The surgeon raises a segment of fibula together with its own artery and vein, cuts wedges out of one side, and folds the straight bone closed at those cuts until it matches the curve of a jaw. It is plated in position, and its vessels are joined to vessels in the neck, so the transplanted bone arrives with a blood supply and stays alive rather than sitting there as dead scaffolding.</p>
 
@@ -266,47 +266,37 @@ footer p{max-width:52ch}
 
     <p>He had it done twice. His jaws were rebuilt. He could not be given lips, a nose, or the ability to make an expression, because there is nowhere on the body to borrow those from.</p></section><section class="sec" id="s2" data-t="15 years" data-l="structure is not a face"><div class="sec-h"><span class='tstamp'>The limit</span><h2>The ceiling</h2></div><p>This is the limit that defines the whole field. Autologous reconstruction restores structure. It can give a patient a jaw that occludes, a nasal airway, coverage over exposed bone. What it cannot restore is a face, because a face is not structure. It is thin mobile skin over dozens of small muscles wired to specific nerves, and no flap taken from a thigh or a forearm behaves that way.</p>
 
-    <p>Norris lived the difference. Reconstructed, functional, and unable to go out. He wore a mask in public for fifteen years, including on the day he came in for the transplant. His surgeon had first taken on his case in 2005, and eventually concluded that no further conventional operation would change his situation.</p></section><section class="sec" id="s3" data-t="2012" data-l="36 hours"><div class="sec-h"><span class='tstamp'>March 2012 · 36 hours</span><h2>What a face transplant actually is</h2></div><p>Facial transplantation belongs to a category called vascularized composite allotransplantation: transplanting a block of several tissue types at once — skin, fat, muscle, nerve, bone, cartilage, blood vessels — as a single living unit, rather than a single organ.</p>
+    <p>Norris lived the difference. Reconstructed, functional, and unable to go out. He wore a mask in public for fifteen years, including on the day he came in for the transplant. His surgeon had first taken on his case in 2005, and eventually concluded that no further conventional operation would change his situation.</p></section><section class="sec" id="s3" data-t="2012" data-l="36 hours"><div class="sec-h"><span class='tstamp'>March 2012 · 36 hours</span><h2>What a face transplant actually is</h2></div><p>Facial transplantation belongs to a category called vascularized composite allotransplantation: transplanting a block of several tissue types at once: skin, fat, muscle, nerve, bone, cartilage, blood vessels: as a single living unit, rather than a single organ.</p>
 
     <p>The operation in March 2012 ran 36 hours. It replaced everything from the hairline to the collarbone: both jaws with the donor's teeth still in them, the tongue, and the overlying skin with its muscles, nerves and vessels. Within a week he could move his jaw and tongue, open and close his eyes, brush his teeth and shave. He had regained his sense of smell, lost since the injury.</p>
 
     <p>Function returned more slowly than appearance, and for a reason worth stating: severed nerves regrow at roughly a millimetre a day. Sensation and movement across a transplanted face arrive over months, in the order the axons reach their targets.</p></section><section class="sec" id="s3b" data-t="2012" data-l="the ethics"><div class="sec-h"><span class='tstamp n'>Why this differs</span><h2>The part that is not like other transplants</h2></div><p>Here is the distinction that makes this case ethically different from a heart or a liver, put most clearly by the psychiatrist on the transplant team: most transplant recipients accept the risks of surgery in order to stay alive. A face transplant recipient accepts them to treat something that is not going to kill him.</p>
 
-    <p>Norris's mother recalls being told her son had roughly a fifty-fifty chance of surviving the operation. She told him the family loved him as he was — and that the decision was his.</p>
+    <p>Norris's mother recalls being told her son had roughly a fifty-fifty chance of surviving the operation. She told him the family loved him as he was, and that the decision was his.</p>
 
     <p>What is being traded is not comparable to a scar or a stiff joint. It is a life spent unable to enter a room. His surgeon's summary of how patients weigh it is blunt: ask them, and they will tell you it is worth the risk.</p></section><section class="sec" id="s4" data-t="2016–19" data-l="kidney failure"><div class="sec-h"><span class='tstamp'>2016–2019 · the cost arrives</span><h2>The price, paid later</h2></div><p>A transplanted face is foreign tissue, and the immune system attacks it for the rest of the recipient's life. The drugs that prevent this are not benign. They raise the risk of infection and of certain cancers, and several of the most effective are toxic to the kidneys.</p>
 
-    <p>By 2016, Norris's kidney function was declining. By 2018 he was being worked up for a kidney transplant, with his doctors trying to find a living donor before he needed dialysis. He ended up on dialysis for months, and received a kidney in 2019 — at the same hospital that had given him the face seven years earlier.</p>
+    <p>By 2016, Norris's kidney function was declining. By 2018 he was being worked up for a kidney transplant, with his doctors trying to find a living donor before he needed dialysis. He ended up on dialysis for months, and received a kidney in 2019. At the same hospital that had given him the face seven years earlier.</p>
 
     <p>The sequence is the honest version of this story. The face was not the end of the treatment. It was the beginning of a second, permanent medical problem, and one that in his case required another transplant to manage.</p></section><section class="sec" id="s5" data-t="2012" data-l="Joshua Aversano"><div class="sec-h"><span class='tstamp n'>The donor</span><h2>The donor</h2></div><p>The face came from Joshua Aversano, 21, killed after being struck by a vehicle. His family consented to donation, and his organs saved five other people on the same day.</p>
 
     <p>Norris later met Joshua's sister. Her description of the encounter is the most precise thing anyone has said about what this operation does: she said she could see her brother in him, and could not tell where her brother ended and he began.</p>
 
-    <p>This is a live question in the field, and it does not have a settled answer. A transplanted face does not make the recipient look like the donor, because the underlying bone shapes the result — but it does not leave the donor entirely behind either.</p></section><section class="sec" id="s6" data-t="after" data-l="and after"><div class="sec-h"><span class='tstamp'>Afterwards</span><h2>Afterwards</h2></div><p>Norris described looking in the mirror and seeing himself. He regained speech and expression, went back out in public, took online courses, and began speaking with other patients facing catastrophic facial injuries — on the grounds that he had been where they were.</p></section>
+    <p>This is a live question in the field, and it does not have a settled answer. A transplanted face does not make the recipient look like the donor, because the underlying bone shapes the result, but it does not leave the donor entirely behind either.</p></section><section class="sec" id="s6" data-t="after" data-l="and after"><div class="sec-h"><span class='tstamp'>Afterwards</span><h2>Afterwards</h2></div><p>Norris described looking in the mirror and seeing himself. He regained speech and expression, went back out in public, took online courses, and began speaking with other patients facing catastrophic facial injuries. On the grounds that he had been where they were.</p></section>
       <section class="sec" id="close" data-t="" data-l="what the case teaches">
         <div class="sec-h"><span class="tstamp n">Closing the record</span><h2>What this case teaches</h2></div>
-        <p>The twenty operations were not failures. They rebuilt a jaw from a leg bone, which is a remarkable thing to be able to do, and they kept him alive and functioning. They simply could not solve the actual problem, because the actual problem was not structural. Face transplantation solves it, at the cost of lifelong immunosuppression and everything that follows from it — in this case, a second organ failure and a second transplant. That is not an argument against the operation. It is what the operation costs, and it is paid over decades rather than in theatre.</p>
+        <p>The twenty operations were not failures. They rebuilt a jaw from a leg bone, which is a remarkable thing to be able to do, and they kept him alive and functioning. They simply could not solve the actual problem, because the actual problem was not structural. Face transplantation solves it, at the cost of lifelong immunosuppression and everything that follows from it: in this case, a second organ failure and a second transplant. That is not an argument against the operation. It is what the operation costs, and it is paid over decades rather than in theatre.</p>
       </section>
       <div class="src"><p>Written from published surgical literature on tooth-bearing maxillomandibular facial transplantation and from contemporaneous reporting by the University of Maryland Medical Center, the Associated Press and others. Clinical photographs of this patient are held by the University of Maryland Medical Center and are not reproduced here. Details reflect reporting up to the 2019 kidney transplant. The diagram is original to MedicaseHub and may be reused freely. This article is not medical advice. <a href="disclaimer.html">Read the full disclaimer</a>.</p></div>
       <div class="ad" aria-hidden="true"><div><span class="lab">Advertisement</span><div id="ezoic-pub-ad-placeholder-102"></div></div></div>
       <section class="rel">
-        <h2 class="lab">Related cases</h2>
-        <div class="case-grid"><a class="case-card" href="case-010.html">
-        <div class="case-id"><span>MC-010</span></div>
-        <h3>Replanting an arm</h3>
-        <p>Six hours of viability, and a decision that had to be made in minutes.</p>
-      </a>
-      <a class="case-card" href="case-003.html">
-        <div class="case-id"><span>MC-003</span></div>
-        <h3>Burn scar contracture</h3>
-        <p>Ten months of healing did what the fire did not.</p>
-      </a>
-      <a class="case-card" href="case-007.html">
-        <div class="case-id"><span>MC-007</span></div>
-        <h3>Keloid vs hypertrophic scar</h3>
-        <p>One crosses the wound edges. One does not.</p>
-      </a></div>
-      </section>
+<h2 class="lab">Related cases</h2>
+<ol>
+<li><a class="row" href="case-010.html"><span class="meta"><span>MC-010</span><span>Reconstruction</span><span class="hasfig"></span></span><span class="ti">Replanting an arm: the clock, and the harder question</span><span class="dek">Six hours of viability, and a decision about whether to reattach a limb the patient removed himself.</span></a></li>
+<li><a class="row" href="case-003.html"><span class="meta"><span>MC-003</span><span>Reconstruction</span><span class="hasfig"></span></span><span class="ti">Burn scar contracture: face healed to the chest</span><span class="dek">Ten months without a surgeon turned a survivable burn into a disfigurement that took twelve operations to reverse.</span></a></li>
+<li><a class="row" href="case-007.html"><span class="meta"><span>MC-007</span><span>Reconstruction</span><span class="hasfig"></span></span><span class="ti">Keloid vs hypertrophic scar: fifteen years untreated</span><span class="dek">Minor cuts to the jaw, no treatment available, and fifteen years for a scar to become a disability.</span></a></li>
+</ol>
+</section>
       <p class="back"><a href="cases.html">&larr; All cases</a></p>
     </div>
   </div>
@@ -332,7 +322,7 @@ function set(sec){
   ticks.forEach(function(li){ li.classList.toggle('on', li.getAttribute('data-sec')===id); });
   var back=sec.classList.contains('fb');
   var rn=document.querySelector('.rail-now');
-  if(rn) rn.style.color = back ? 'var(--ink-2)' : 'var(--time)';
+  if(rn) rn.style.color = back ? 'var(--ink-2)': 'var(--time)';
   if(now) now.textContent=(back?'\u21a9 ':'')+(sec.getAttribute('data-t')||'');
   if(nowlab) nowlab.textContent=sec.getAttribute('data-l')||'';
 }

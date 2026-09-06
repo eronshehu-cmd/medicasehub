@@ -176,7 +176,7 @@ h1{font-family:var(--serif);font-size:clamp(31px,7.4vw,60px);letter-spacing:-.02
 .src .pin{font-family:var(--mono);font-size:12px;color:var(--ink);border:1px solid var(--rule);background:#fff;padding:2px 7px;border-radius:2px;white-space:nowrap}
 
 /* ---- related ---- */
-.rel{border-top:1px solid var(--rule);background:var(--sheet)}
+.rel ol{list-style:none;margin:0;padding:0}.rel .row{display:grid;grid-template-columns:minmax(0,1fr);gap:2px;padding:14px 0;text-decoration:none;color:inherit;border-bottom:1px solid var(--rule)}.rel .row:hover{background:var(--paper-2)}.rel .meta{display:flex;gap:10px;align-items:baseline;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}.rel .ti{font-family:var(--serif);font-size:19px;line-height:1.22;letter-spacing:-.01em;display:block;margin:3px 0 0;color:var(--ink)}.rel .dek{font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--ink-2);display:block;margin:4px 0 0;max-width:62ch}.rel .hasfig{display:none}.rel{border-top:1px solid var(--rule);background:var(--sheet)}
 .rel .wrap{padding:26px 20px 34px}
 .rel h2{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:400;margin-bottom:14px}
 .rel ul{list-style:none;margin:0;padding:0;display:grid;gap:0}
@@ -250,7 +250,7 @@ footer p{max-width:52ch}
         <span class="seal">Written and reviewed by a practising physician</span>
         <span>Drafted, checked against its cited sources and reviewed for clinical accuracy before publication. <a href="editorial.html">How we work</a>.</span>
       </div>
-      <div class="fields"><dl><div class="fld"><dt>Specialty</dt><dd>Paediatrics, intensive care, infectious disease</dd></div><div class="fld"><dt>Patient</dt><dd>Girl, 6</dd></div><div class="fld"><dt>Immunisation</dt><dd>Incomplete &mdash; one dose of pentavalent vaccine</dd></div><div class="fld"><dt>Injury</dt><dd>Penetrating wood splinter, right arm</dd></div><div class="fld"><dt>First treatment</dt><dd>Antiseptic wash, oral antibiotic, discharged home</dd></div><div class="fld t"><dt>Onset</dt><dd>10&ndash;11 days later: fever, muscle pain, generalised spasms</dd></div><div class="fld"><dt>Course</dt><dd>Paediatric ICU, ventilated, sedated, muscle relaxants</dd></div><div class="fld t"><dt>Outcome</dt><dd>Survived; mild motor sequelae, resolved over 2 years of rehabilitation</dd></div></dl></div>
+      <div class="fields"><dl><div class="fld"><dt>Specialty</dt><dd>Paediatrics, intensive care, infectious disease</dd></div><div class="fld"><dt>Patient</dt><dd>Girl, 6</dd></div><div class="fld"><dt>Immunisation</dt><dd>Incomplete, one dose of pentavalent vaccine</dd></div><div class="fld"><dt>Injury</dt><dd>Penetrating wood splinter, right arm</dd></div><div class="fld"><dt>First treatment</dt><dd>Antiseptic wash, oral antibiotic, discharged home</dd></div><div class="fld t"><dt>Onset</dt><dd>10&ndash;11 days later: fever, muscle pain, generalised spasms</dd></div><div class="fld"><dt>Course</dt><dd>Paediatric ICU, ventilated, sedated, muscle relaxants</dd></div><div class="fld t"><dt>Outcome</dt><dd>Survived; mild motor sequelae, resolved over 2 years of rehabilitation</dd></div></dl></div>
       <section class="advice" aria-labelledby="ad-h"><h2 id="ad-h">If you have a wound and are unsure, now</h2><ul><li>Washing a wound does not cover tetanus. They are two separate steps.</li><li>Deep or dirty puncture wounds carry the highest risk, especially from wood, soil or animal contact.</li><li>The question that decides it is how many tetanus doses you have had. If it is fewer than three, or you do not know, say so.</li><li>Assessment takes minutes and can be done at any urgent care or GP.</li></ul><p>This is general information, not advice about your own treatment. <a href="disclaimer.html">Full disclaimer</a>.</p></section>
     </div>
   </header>
@@ -268,11 +268,11 @@ footer p{max-width:52ch}
 
     <figure class="fig"><div class="fig-h"><b>FIG 1</b><span class="lab">how the toxin works</span><span class="t">original diagram</span></div><div class="fig-i"><img src="tetanus-mechanism.svg" loading="lazy" decoding="async" alt="Two panels. Normal control: a motor neuron receives both a go signal and a stop signal, so the muscle contracts and then relaxes. Tetanus: the toxin blocks the stop signal, so the motor neuron fires continuously and the muscle stays contracted"></div><figcaption>The toxin does not stimulate muscles. It removes the ability to stop stimulating them.</figcaption></figure>
 
-    <p>Everything else follows from that. The jaw muscles are strong and constantly used, so they lock first — trismus, the inability to open the mouth. The facial muscles pull into a fixed grimace. And when every muscle in the trunk contracts at once, the powerful extensors of the back overpower the abdominal muscles, so the body arches backwards. That posture, opisthotonus, is what most people recognise from photographs, and it is not a seizure. The child is fully conscious throughout.</p>
+    <p>Everything else follows from that. The jaw muscles are strong and constantly used, so they lock first: trismus, the inability to open the mouth. The facial muscles pull into a fixed grimace. And when every muscle in the trunk contracts at once, the powerful extensors of the back overpower the abdominal muscles, so the body arches backwards. That posture, opisthotonus, is what most people recognise from photographs, and it is not a seizure. The child is fully conscious throughout.</p>
 
     <figure class="fig"><div class="fig-h"><b>FIG 2</b><span class="lab">opisthotonus, 1809</span><span class="t">original diagram</span></div><div class="fig-i"><img src="images/bell-opisthotonus.JPG" loading="lazy" decoding="async" alt="Oil painting from 1809 by Sir Charles Bell showing a soldier with tetanus, his body rigidly arched backwards so that only his head and heels rest on the bed, jaw clenched and face fixed in a grimace"></div><figcaption>Sir Charles Bell painted this soldier in 1809, after the Battle of Corunna, from the series The Wounded following the Battle of Corunna. It is the clearest depiction of opisthotonus in medicine, and Bell made it seventy-five years before anyone identified the bacterium responsible. Royal College of Surgeons of Edinburgh. Public domain.</figcaption></figure></section><section class="sec" id="s2b" data-t="days 1–10" data-l="silent"><div class="sec-h"><span class='tstamp'>Days 1–10 · nothing happens</span><h2>The incubation period is the warning</h2></div><p>Ten to eleven days passed between the splinter and the first symptoms, and that gap is the reason tetanus catches people out. The injury has healed over. Nobody connects a locked jaw to a splinter almost a fortnight earlier, and often the original wound is never found at all.</p>
 
-    <p>It also means the diagnosis is clinical. There is no test that confirms tetanus quickly. It is made from the picture and the vaccination history, which is exactly how it was made here.</p></section><section class="sec fb" id="s1b" data-t="day 0" data-l="the missed step"><div class="sec-h"><span class='tstamp'>↩ Day 0 · what was missing</span><h2>What should have happened at the first visit</h2></div><p>Wound cleaning is one half of tetanus prevention. The other half is deciding whether the patient needs a vaccine dose, immunoglobulin, or both — and that decision turns on two things: how dirty the wound is, and how many doses of tetanus vaccine the patient has had.</p>
+    <p>It also means the diagnosis is clinical. There is no test that confirms tetanus quickly. It is made from the picture and the vaccination history, which is exactly how it was made here.</p></section><section class="sec fb" id="s1b" data-t="day 0" data-l="the missed step"><div class="sec-h"><span class='tstamp'>↩ Day 0 · what was missing</span><h2>What should have happened at the first visit</h2></div><p>Wound cleaning is one half of tetanus prevention. The other half is deciding whether the patient needs a vaccine dose, immunoglobulin, or both, and that decision turns on two things: how dirty the wound is, and how many doses of tetanus vaccine the patient has had.</p>
 
     <table style="width:100%;border-collapse:collapse;margin:1.8rem 0;font-size:0.92rem">
       <thead>
@@ -305,35 +305,25 @@ footer p{max-width:52ch}
 
     <p>The immunoglobulin is the part that matters most in that situation, because it is not a vaccine. It is ready-made antibody, and it works immediately, mopping up toxin before it reaches nerves. A vaccine dose asks the immune system to build a response over weeks, which is too slow when the exposure has already happened.</p>
 
-    <p>The failure here was not a lack of access. She reached a hospital the same day and was treated by clinicians who did the obvious things correctly. What was missing was the question that determines the whole outcome: <em>how many tetanus doses has this child actually had?</em></p></section><section class="sec" id="s4" data-t="day 11+" data-l="intensive care"><div class="sec-h"><span class='tstamp'>Day 11 · ventilated</span><h2>What treatment looks like once it starts</h2></div><p>By the time she was admitted she was deteriorating neurologically. She was taken to paediatric intensive care, ventilated, sedated and given muscle relaxants — because the spasms themselves become the emergency. They can close the airway, break bones, and exhaust the respiratory muscles.</p>
+    <p>The failure here was not a lack of access. She reached a hospital the same day and was treated by clinicians who did the obvious things correctly. What was missing was the question that determines the whole outcome: <em>how many tetanus doses has this child actually had?</em></p></section><section class="sec" id="s4" data-t="day 11+" data-l="intensive care"><div class="sec-h"><span class='tstamp'>Day 11 · ventilated</span><h2>What treatment looks like once it starts</h2></div><p>By the time she was admitted she was deteriorating neurologically. She was taken to paediatric intensive care, ventilated, sedated and given muscle relaxants, because the spasms themselves become the emergency. They can close the airway, break bones, and exhaust the respiratory muscles.</p>
 
     <p>The rest of the treatment followed WHO recommendations: penicillin and metronidazole to kill the remaining bacteria, tetanus toxoid to build immunity for the future, and high-dose tetanus immunoglobulin to neutralise circulating toxin. Note that she still received the toxoid: surviving tetanus does not make you immune to it, because the amount of toxin needed to cause the disease is too small to provoke a lasting immune response.</p>
 
     <p>Recovery is slow because the toxin's effect only ends when the affected nerve terminals regenerate. She was discharged with mild motor problems that resolved over two years of follow-up and rehabilitation.</p></section>
       <section class="sec" id="close" data-t="" data-l="what the case teaches">
         <div class="sec-h"><span class="tstamp n">Closing the record</span><h2>What this case teaches</h2></div>
-        <p>Wound care and tetanus prophylaxis are two separate interventions, and doing the first well does not cover the second. The decision needs only two pieces of information — the nature of the wound and the number of prior vaccine doses — and in a child with an incomplete schedule and a dirty puncture wound, it points clearly at immunoglobulin. She survived and recovered fully, after intensive care and two years of rehabilitation, from something that a single injection at her first hospital visit would very likely have prevented.</p>
+        <p>Wound care and tetanus prophylaxis are two separate interventions, and doing the first well does not cover the second. The decision needs only two pieces of information: the nature of the wound and the number of prior vaccine doses, and in a child with an incomplete schedule and a dirty puncture wound, it points clearly at immunoglobulin. She survived and recovered fully, after intensive care and two years of rehabilitation, from something that a single injection at her first hospital visit would very likely have prevented.</p>
       </section>
-      <div class="src"><p>Written from Cejudo-García de Alba MP, Valle-Leal JG, Sánchez Beltrán JG, Vázquez-Amparano AJF, &ldquo;Tétanos, una enfermedad vigente en población pediátrica: reporte de un caso,&rdquo; <em>Revista Chilena de Pediatría</em> 2017;88(4):507-510, and from WHO guidance on tetanus prevention and management. Photographs from the source case are not reproduced here. The 1809 painting by Sir Charles Bell is in the public domain and is available from Wikimedia Commons. The prophylaxis table is a simplified summary of standard guidance; national schedules differ, and it is not a substitute for clinical assessment. The diagram is original to MedicaseHub and may be reused freely. This article is not medical advice. If you have a wound and are unsure of your tetanus vaccination status, ask a clinician — the assessment takes minutes. <a href="disclaimer.html">Read the full disclaimer</a>.</p></div>
+      <div class="src"><p>Written from Cejudo-García de Alba MP, Valle-Leal JG, Sánchez Beltrán JG, Vázquez-Amparano AJF, &ldquo;Tétanos, una enfermedad vigente en población pediátrica: reporte de un caso,&rdquo; <em>Revista Chilena de Pediatría</em> 2017;88(4):507-510, and from WHO guidance on tetanus prevention and management. Photographs from the source case are not reproduced here. The 1809 painting by Sir Charles Bell is in the public domain and is available from Wikimedia Commons. The prophylaxis table is a simplified summary of standard guidance; national schedules differ, and it is not a substitute for clinical assessment. The diagram is original to MedicaseHub and may be reused freely. This article is not medical advice. If you have a wound and are unsure of your tetanus vaccination status, ask a clinician. The assessment takes minutes. <a href="disclaimer.html">Read the full disclaimer</a>.</p></div>
       <div class="ad" aria-hidden="true"><div><span class="lab">Advertisement</span><div id="ezoic-pub-ad-placeholder-102"></div></div></div>
       <section class="rel">
-        <h2 class="lab">Related cases</h2>
-        <div class="case-grid"><a class="case-card" href="case-009.html">
-        <div class="case-id"><span>MC-009</span></div>
-        <h3>Retinoblastoma</h3>
-        <p>Over 95% survive when it is found early, around 40% when it is not.</p>
-      </a>
-      <a class="case-card" href="case-005.html">
-        <div class="case-id"><span>MC-005</span></div>
-        <h3>Viper bite coagulopathy</h3>
-        <p>His blood stopped clotting. A normal scan kept him out of theatre.</p>
-      </a>
-      <a class="case-card" href="case-007.html">
-        <div class="case-id"><span>MC-007</span></div>
-        <h3>Keloid vs hypertrophic scar</h3>
-        <p>Minor cuts, no treatment available, fifteen years to a disability.</p>
-      </a></div>
-      </section>
+<h2 class="lab">Related cases</h2>
+<ol>
+<li><a class="row" href="case-009.html"><span class="meta"><span>MC-009</span><span>Children</span><span class="hasfig"></span></span><span class="ti">Retinoblastoma: the cancer a photo can catch</span><span class="dek">Over 95% survive when it is found early, around 40% when it is not. The tumour is the same.</span></a></li>
+<li><a class="row" href="case-005.html"><span class="meta"><span>MC-005</span><span>Emergency</span><span class="hasfig" title="Includes an original diagram"></span></span><span class="ti">Viper bite coagulopathy: the scan that showed nothing</span><span class="dek">Three hours after the bite his blood could no longer clot. A normal ultrasound is what kept him out of theatre.</span></a></li>
+<li><a class="row" href="case-007.html"><span class="meta"><span>MC-007</span><span>Reconstruction</span><span class="hasfig"></span></span><span class="ti">Keloid vs hypertrophic scar: fifteen years untreated</span><span class="dek">Minor cuts to the jaw, no treatment available, and fifteen years for a scar to become a disability.</span></a></li>
+</ol>
+</section>
       <p class="back"><a href="cases.html">&larr; All cases</a></p>
     </div>
   </div>
@@ -359,7 +349,7 @@ function set(sec){
   ticks.forEach(function(li){ li.classList.toggle('on', li.getAttribute('data-sec')===id); });
   var back=sec.classList.contains('fb');
   var rn=document.querySelector('.rail-now');
-  if(rn) rn.style.color = back ? 'var(--ink-2)' : 'var(--time)';
+  if(rn) rn.style.color = back ? 'var(--ink-2)': 'var(--time)';
   if(now) now.textContent=(back?'\u21a9 ':'')+(sec.getAttribute('data-t')||'');
   if(nowlab) nowlab.textContent=sec.getAttribute('data-l')||'';
 }

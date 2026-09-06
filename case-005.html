@@ -176,7 +176,7 @@ h1{font-family:var(--serif);font-size:clamp(31px,7.4vw,60px);letter-spacing:-.02
 .src .pin{font-family:var(--mono);font-size:12px;color:var(--ink);border:1px solid var(--rule);background:#fff;padding:2px 7px;border-radius:2px;white-space:nowrap}
 
 /* ---- related ---- */
-.rel{border-top:1px solid var(--rule);background:var(--sheet)}
+.rel ol{list-style:none;margin:0;padding:0}.rel .row{display:grid;grid-template-columns:minmax(0,1fr);gap:2px;padding:14px 0;text-decoration:none;color:inherit;border-bottom:1px solid var(--rule)}.rel .row:hover{background:var(--paper-2)}.rel .meta{display:flex;gap:10px;align-items:baseline;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}.rel .ti{font-family:var(--serif);font-size:19px;line-height:1.22;letter-spacing:-.01em;display:block;margin:3px 0 0;color:var(--ink)}.rel .dek{font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--ink-2);display:block;margin:4px 0 0;max-width:62ch}.rel .hasfig{display:none}.rel{border-top:1px solid var(--rule);background:var(--sheet)}
 .rel .wrap{padding:26px 20px 34px}
 .rel h2{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:400;margin-bottom:14px}
 .rel ul{list-style:none;margin:0;padding:0;display:grid;gap:0}
@@ -258,11 +258,11 @@ footer p{max-width:52ch}
   <div class="body">
     <div class="rail" id="rail"><div class="rail-now"><span id="rnow">0 h</span><i id="rnowlab">the bite</i></div><ol><li class="" data-sec="s1"><b>0 h</b><span>the bite</span></li><li class="" data-sec="s2"><b>3 h</b><span>bloods, already failing</span></li><li class="" data-sec="s3"><b>3 h</b><span>the scan that was normal</span></li><li class="nt" data-sec="s4"><b>36 h</b><span>clotting restored</span></li></ol></div>
     <div class="prose">
-      <section class="sec" id="s1" data-t="3 h" data-l="arrival"><div class="sec-h"><span class='tstamp'>3 h · arrival</span><h2>Presentation</h2></div><p>The patient was urinating in an open field when a snake struck him on the penis. He reached the emergency department three hours later and identified the animal himself, by the local name <em>gunas</em> — the Levantine viper, a species found across the Middle East, the Caucasus, and parts of Central Asia.</p>
+      <section class="sec" id="s1" data-t="3 h" data-l="arrival"><div class="sec-h"><span class='tstamp'>3 h · arrival</span><h2>Presentation</h2></div><p>The patient was urinating in an open field when a snake struck him on the penis. He reached the emergency department three hours later and identified the animal himself, by the local name <em>gunas</em>: the Levantine viper, a species found across the Middle East, the Caucasus, and parts of Central Asia.</p>
 
     <p>His vital signs were stable. The bitten organ was grossly swollen, and haemorrhagic blisters had already formed over the puncture marks. Blisters filled with blood are not incidental in a viper bite. They mark tissue where the venom has broken down the small vessels, and they usually indicate where necrosis will follow.</p></section><section class="sec" id="s2" data-t="3 h" data-l="fibrinogen 80"><div class="sec-h"><span class='tstamp'>3 h · the bloods</span><h2>What the bloods showed</h2></div><p>The laboratory results told the more urgent story. His prothrombin time was 17 seconds against a reference under 12. His activated partial thromboplastin time was 34 seconds against a reference under 24. His fibrinogen had fallen to 80 mg/dL, against a normal range of 200 to 400.</p>
 
-    <p>Both clotting pathways were prolonged and fibrinogen was severely depleted, three hours after a bite. This is the signature of venom-induced consumption coagulopathy. Viper venoms contain enzymes that activate the clotting cascade directly, and the cascade runs until the clotting factors are exhausted. The patient is then left unable to clot at all — the paradox of a substance that causes clotting producing a bleeding state.</p></section><section class="sec" id="s3" data-t="3 h" data-l="surgery or not"><div class="sec-h"><span class='tstamp'>The finding that decided it</span><h2>The decision point</h2></div><p>A swollen, discoloured, blistering organ after envenomation raises an immediate surgical question: is the blood supply compromised, and does something need to be cut open to save the tissue?</p>
+    <p>Both clotting pathways were prolonged and fibrinogen was severely depleted, three hours after a bite. This is the signature of venom-induced consumption coagulopathy. Viper venoms contain enzymes that activate the clotting cascade directly, and the cascade runs until the clotting factors are exhausted. The patient is then left unable to clot at all, the paradox of a substance that causes clotting producing a bleeding state.</p></section><section class="sec" id="s3" data-t="3 h" data-l="surgery or not"><div class="sec-h"><span class='tstamp'>The finding that decided it</span><h2>The decision point</h2></div><p>A swollen, discoloured, blistering organ after envenomation raises an immediate surgical question: is the blood supply compromised, and does something need to be cut open to save the tissue?</p>
 
     <p>The team answered it with venous and arterial Doppler ultrasonography, which showed normal flow through the cavernosal and dorsal vessels. Nothing was obstructed. The swelling was venom-driven oedema, not vascular occlusion.</p>
 
@@ -276,23 +276,13 @@ footer p{max-width:52ch}
       <div class="src"><p>Adapted for educational purposes from a case published in the medical literature. It is not medical advice, and nothing here should guide the management of a snakebite. Anyone bitten by a snake needs emergency medical assessment, regardless of how well they feel. <a href="disclaimer.html">Read the full disclaimer</a>.</p></div>
       <div class="ad" aria-hidden="true"><div><span class="lab">Advertisement</span><div id="ezoic-pub-ad-placeholder-102"></div></div></div>
       <section class="rel">
-        <h2 class="lab">Related cases</h2>
-        <div class="case-grid"><a class="case-card" href="case-008.html">
-        <div class="case-id"><span>MC-008</span></div>
-        <h3>Parasitic twin</h3>
-        <p>No heart of its own, perfused entirely by its sibling.</p>
-      </a>
-      <a class="case-card" href="case-007.html">
-        <div class="case-id"><span>MC-007</span></div>
-        <h3>Keloid vs hypertrophic scar</h3>
-        <p>One crosses the wound edges. One does not.</p>
-      </a>
-      <a class="case-card" href="case-006.html">
-        <div class="case-id"><span>MC-006</span></div>
-        <h3>Wooden foreign body on CT</h3>
-        <p>Bamboo reads as air. The scan said gas.</p>
-      </a></div>
-      </section>
+<h2 class="lab">Related cases</h2>
+<ol>
+<li><a class="row" href="case-008.html"><span class="meta"><span>MC-008</span><span>Children</span><span class="hasfig"></span></span><span class="ti">Parasitic twin: the twin with no heart</span><span class="dek">A second head with eyes and lips, and no circulation of its own. Waiting would have made her weaker, not safer.</span></a></li>
+<li><a class="row" href="case-007.html"><span class="meta"><span>MC-007</span><span>Reconstruction</span><span class="hasfig"></span></span><span class="ti">Keloid vs hypertrophic scar: fifteen years untreated</span><span class="dek">Minor cuts to the jaw, no treatment available, and fifteen years for a scar to become a disability.</span></a></li>
+<li><a class="row" href="case-006.html"><span class="meta"><span>MC-006</span><span>Diagnosis</span><span class="hasfig"></span></span><span class="ti">Wooden foreign body on CT: the scan said gas</span><span class="dek">Wood reads as air on a scan. The clue that overturned the report was an infection that would not settle.</span></a></li>
+</ol>
+</section>
       <p class="back"><a href="cases.html">&larr; All cases</a></p>
     </div>
   </div>
@@ -318,7 +308,7 @@ function set(sec){
   ticks.forEach(function(li){ li.classList.toggle('on', li.getAttribute('data-sec')===id); });
   var back=sec.classList.contains('fb');
   var rn=document.querySelector('.rail-now');
-  if(rn) rn.style.color = back ? 'var(--ink-2)' : 'var(--time)';
+  if(rn) rn.style.color = back ? 'var(--ink-2)': 'var(--time)';
   if(now) now.textContent=(back?'\u21a9 ':'')+(sec.getAttribute('data-t')||'');
   if(nowlab) nowlab.textContent=sec.getAttribute('data-l')||'';
 }

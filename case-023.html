@@ -176,7 +176,7 @@ h1{font-family:var(--serif);font-size:clamp(31px,7.4vw,60px);letter-spacing:-.02
 .src .pin{font-family:var(--mono);font-size:12px;color:var(--ink);border:1px solid var(--rule);background:#fff;padding:2px 7px;border-radius:2px;white-space:nowrap}
 
 /* ---- related ---- */
-.rel{border-top:1px solid var(--rule);background:var(--sheet)}
+.rel ol{list-style:none;margin:0;padding:0}.rel .row{display:grid;grid-template-columns:minmax(0,1fr);gap:2px;padding:14px 0;text-decoration:none;color:inherit;border-bottom:1px solid var(--rule)}.rel .row:hover{background:var(--paper-2)}.rel .meta{display:flex;gap:10px;align-items:baseline;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}.rel .ti{font-family:var(--serif);font-size:19px;line-height:1.22;letter-spacing:-.01em;display:block;margin:3px 0 0;color:var(--ink)}.rel .dek{font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--ink-2);display:block;margin:4px 0 0;max-width:62ch}.rel .hasfig{display:none}.rel{border-top:1px solid var(--rule);background:var(--sheet)}
 .rel .wrap{padding:26px 20px 34px}
 .rel h2{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:400;margin-bottom:14px}
 .rel ul{list-style:none;margin:0;padding:0;display:grid;gap:0}
@@ -286,7 +286,7 @@ footer p{max-width:52ch}
 
     <p>Putting the mesh in at the time of resection is therefore not finishing touches. It is the step that determines what the face looks like for the rest of her life.</p></section><section class="sec fb" id="s0" data-t="years" data-l="before surgery"><div class="sec-h"><span class='tstamp'>↩ The years before</span><h2>The years before</h2></div><p>She presented late, after years of living with a visible facial mass.</p>
 
-    <p>The medical account of this case is a single operation. The part that took years was everything before it &mdash; and fibrous dysplasia is a slow disease, which cuts both ways. It gives time to reach care, and it also gives the deformity time to become the thing a teenager is known for.</p>
+    <p>The medical account of this case is a single operation. The part that took years was everything before it, and fibrous dysplasia is a slow disease, which cuts both ways. It gives time to reach care, and it also gives the deformity time to become the thing a teenager is known for.</p>
 
     <p>The surgical team's own note on the outcome was that she is happy now. That is the part no diagram covers, and in a case like this it is not a footnote.</p></section>
       <section class="sec" id="close" data-t="" data-l="what the case teaches">
@@ -296,23 +296,13 @@ footer p{max-width:52ch}
       <div class="src"><p>Written from a case shared publicly by the operating surgical team, together with standard references on craniofacial fibrous dysplasia, its genetic basis, indications for surgery and orbital floor reconstruction. The clinical photograph accompanying that account is held by the team that published it, shows an identifiable minor, and is not reproduced here. The diagram is original to MedicaseHub and may be reused freely. This article is not medical advice; anyone with a growing facial swelling should be assessed by a clinician. <a href="disclaimer.html">Read the full disclaimer</a>.</p></div>
       <div class="ad" aria-hidden="true"><div><span class="lab">Advertisement</span><div id="ezoic-pub-ad-placeholder-102"></div></div></div>
       <section class="rel">
-        <h2 class="lab">Related cases</h2>
-        <div class="case-grid"><a class="case-card" href="case-022.html">
-        <div class="case-id"><span>MC-022</span></div>
-        <h3>He was not going blind from the fire</h3>
-        <p>Another structure nobody notices until it is gone.</p>
-      </a>
-      <a class="case-card" href="case-021.html">
-        <div class="case-id"><span>MC-021</span></div>
-        <h3>He was a face transplant candidate</h3>
-        <p>Jaws rebuilt from a leg, a nose from a forehead.</p>
-      </a>
-      <a class="case-card" href="case-009.html">
-        <div class="case-id"><span>MC-009</span></div>
-        <h3>Retinoblastoma</h3>
-        <p>Over 95% survive when it is found early, around 40% when it is not.</p>
-      </a></div>
-      </section>
+<h2 class="lab">Related cases</h2>
+<ol>
+<li><a class="row" href="case-022.html"><span class="meta"><span>MC-022</span><span>Reconstruction</span><span class="hasfig"></span></span><span class="ti">He was not going blind from the fire</span><span class="dek">His eyes survived the burns. His eyelids did not, and nothing grafted can be made to blink.</span></a></li>
+<li><a class="row" href="case-021.html"><span class="meta"><span>MC-021</span><span>Reconstruction</span><span class="hasfig"></span></span><span class="ti">He was a face transplant candidate</span><span class="dek">The surgeon who assessed him performs face transplants. He rebuilt this patient from his own tissue instead.</span></a></li>
+<li><a class="row" href="case-009.html"><span class="meta"><span>MC-009</span><span>Children</span><span class="hasfig"></span></span><span class="ti">Retinoblastoma: the cancer a photo can catch</span><span class="dek">Over 95% survive when it is found early, around 40% when it is not. The tumour is the same.</span></a></li>
+</ol>
+</section>
       <p class="back"><a href="cases.html">&larr; All cases</a></p>
     </div>
   </div>
@@ -338,7 +328,7 @@ function set(sec){
   ticks.forEach(function(li){ li.classList.toggle('on', li.getAttribute('data-sec')===id); });
   var back=sec.classList.contains('fb');
   var rn=document.querySelector('.rail-now');
-  if(rn) rn.style.color = back ? 'var(--ink-2)' : 'var(--time)';
+  if(rn) rn.style.color = back ? 'var(--ink-2)': 'var(--time)';
   if(now) now.textContent=(back?'\u21a9 ':'')+(sec.getAttribute('data-t')||'');
   if(nowlab) nowlab.textContent=sec.getAttribute('data-l')||'';
 }

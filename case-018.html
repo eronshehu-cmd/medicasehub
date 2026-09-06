@@ -176,7 +176,7 @@ h1{font-family:var(--serif);font-size:clamp(31px,7.4vw,60px);letter-spacing:-.02
 .src .pin{font-family:var(--mono);font-size:12px;color:var(--ink);border:1px solid var(--rule);background:#fff;padding:2px 7px;border-radius:2px;white-space:nowrap}
 
 /* ---- related ---- */
-.rel{border-top:1px solid var(--rule);background:var(--sheet)}
+.rel ol{list-style:none;margin:0;padding:0}.rel .row{display:grid;grid-template-columns:minmax(0,1fr);gap:2px;padding:14px 0;text-decoration:none;color:inherit;border-bottom:1px solid var(--rule)}.rel .row:hover{background:var(--paper-2)}.rel .meta{display:flex;gap:10px;align-items:baseline;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}.rel .ti{font-family:var(--serif);font-size:19px;line-height:1.22;letter-spacing:-.01em;display:block;margin:3px 0 0;color:var(--ink)}.rel .dek{font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--ink-2);display:block;margin:4px 0 0;max-width:62ch}.rel .hasfig{display:none}.rel{border-top:1px solid var(--rule);background:var(--sheet)}
 .rel .wrap{padding:26px 20px 34px}
 .rel h2{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:400;margin-bottom:14px}
 .rel ul{list-style:none;margin:0;padding:0;display:grid;gap:0}
@@ -250,7 +250,7 @@ footer p{max-width:52ch}
         <span class="seal">Written and reviewed by a practising physician</span>
         <span>Drafted, checked against its cited sources and reviewed for clinical accuracy before publication. <a href="editorial.html">How we work</a>.</span>
       </div>
-      <div class="fields"><dl><div class="fld"><dt>Specialty</dt><dd>Infectious disease, critical care, plastic surgery</dd></div><div class="fld"><dt>Patient</dt><dd>Carolina Bowen, 20, South Carolina; type 1 diabetes</dd></div><div class="fld"><dt>Organism</dt><dd><em>Rhizopus oryzae</em> &mdash; a mould of the order Mucorales</dd></div><div class="fld"><dt>Route in</dt><dd>Insulin pump site, left arm</dd></div><div class="fld"><dt>On admission</dt><dd>Septic shock, organ failure, necrotising infection of the arm</dd></div><div class="fld t"><dt>Course</dt><dd>A month in an induced coma; five operations; cardiac arrest during one</dd></div><div class="fld"><dt>What finally worked</dt><dd>Antifungal irrigated directly into the wound, after intravenous antifungals failed</dd></div><div class="fld t"><dt>Cost</dt><dd>Nerves from armpit to elbow removed; most arm function lost</dd></div><div class="fld t"><dt>Outcome</dt><dd>Arm saved rather than amputated; kidneys and lungs recovered</dd></div></dl></div>
+      <div class="fields"><dl><div class="fld"><dt>Specialty</dt><dd>Infectious disease, critical care, plastic surgery</dd></div><div class="fld"><dt>Patient</dt><dd>Carolina Bowen, 20, South Carolina; type 1 diabetes</dd></div><div class="fld"><dt>Organism</dt><dd><em>Rhizopus oryzae</em>, a mould of the order Mucorales</dd></div><div class="fld"><dt>Route in</dt><dd>Insulin pump site, left arm</dd></div><div class="fld"><dt>On admission</dt><dd>Septic shock, organ failure, necrotising infection of the arm</dd></div><div class="fld t"><dt>Course</dt><dd>A month in an induced coma; five operations; cardiac arrest during one</dd></div><div class="fld"><dt>What finally worked</dt><dd>Antifungal irrigated directly into the wound, after intravenous antifungals failed</dd></div><div class="fld t"><dt>Cost</dt><dd>Nerves from armpit to elbow removed; most arm function lost</dd></div><div class="fld t"><dt>Outcome</dt><dd>Arm saved rather than amputated; kidneys and lungs recovered</dd></div></dl></div>
       <section class="advice" aria-labelledby="ad-h"><h2 id="ad-h">If an infusion site looks wrong, now</h2><ul><li>Pain out of proportion to how the site looks is the first warning.</li><li>Redness that expands over hours rather than days is not ordinary irritation.</li><li>Any area that turns dusky, grey or black is a same-day emergency department problem.</li><li>Unexplained loss of glucose control can be the first measurable sign of infection.</li></ul><p>This is general information, not advice about your own treatment. <a href="disclaimer.html">Full disclaimer</a>.</p></section>
     </div>
   </header>
@@ -278,17 +278,17 @@ footer p{max-width:52ch}
 
     <p>It is worth sitting with that. The failure of the drip was not a dosing problem or a resistant organism. It was a plumbing problem, and the answer was to stop relying on the plumbing.</p></section><section class="sec" id="s4" data-t="5 operations" data-l="nerves removed"><div class="sec-h"><span class='tstamp'>Five operations</span><h2>Five operations, and what they cost</h2></div><p>Alongside the antifungals, the treatment was surgical, because dead tissue does not recover and cannot be sterilised. Surgeons remove everything that is not alive and come back to do it again, because the boundary keeps moving. They cut until they reach tissue that bleeds, since bleeding is the only reliable proof of a live blood supply.</p>
 
-    <p>She had five such operations. During one of them her heart stopped and she was resuscitated &mdash; the event she describes as having died, which in clinical terms was a cardiac arrest on the table.</p>
+    <p>She had five such operations. During one of them her heart stopped and she was resuscitated: the event she describes as having died, which in clinical terms was a cardiac arrest on the table.</p>
 
     <p>Amputating the arm at the shoulder was seriously considered. It was avoided, but not without cost: the nerves running from her armpit and shoulder down to the elbow were removed along with the infected tissue. Muscle that loses its nerve supply wastes away regardless of whether the muscle itself was ever infected, which is why she has lost most of the function in that arm and why the wasting continued after the infection was gone.</p>
 
-    <p>That trade &mdash; nerve for limb &mdash; is the one that separates a saved arm from an amputated one in these cases, and it is not a clean win. It is the least bad option available on the day.</p></section><section class="sec" id="s4b" data-t="" data-l="the device"><div class="sec-h"><span class='tstamp n'>On the device</span><h2>The pump is a portal, not a poison</h2></div><p>An insulin pump delivers insulin through a small cannula sitting under the skin, held by an adhesive patch, usually changed every two to three days. Millions of people use them safely, and they represent a large improvement in diabetes care.</p>
+    <p>That trade: nerve for limb: is the one that separates a saved arm from an amputated one in these cases, and it is not a clean win. It is the least bad option available on the day.</p></section><section class="sec" id="s4b" data-t="" data-l="the device"><div class="sec-h"><span class='tstamp n'>On the device</span><h2>The pump is a portal, not a poison</h2></div><p>An insulin pump delivers insulin through a small cannula sitting under the skin, held by an adhesive patch, usually changed every two to three days. Millions of people use them safely, and they represent a large improvement in diabetes care.</p>
 
     <p>But the arrangement does create a small, continuous breach in the skin, with a warm occlusive dressing over it. That is a reasonable portal of entry for an organism that needs one. Fungal infection at these sites is documented in the medical literature, both at insulin injection sites where needles were reused and as a complication of pump therapy, though it remains genuinely rare.</p>
 
     <p>The framing of "not cleaning the pump" is a little misleading. The device is not the reservoir. What matters is hand hygiene when handling the infusion set, skin preparation before insertion, changing sites on schedule rather than stretching them, rotating between sites so skin can recover, and not reusing anything designed to be used once.</p></section><section class="sec" id="s5" data-t="15 months" data-l="her choice"><div class="sec-h"><span class='tstamp'>15 months · by her choice</span><h2>Healing without grafts</h2></div><p>A defect that size would normally be closed with skin grafts. She declined them, having had enough of operating theatres after arresting during one, and chose to let the wound close on its own.</p>
 
-    <p>Wounds do heal this way &mdash; by secondary intention, filling in from the base with new tissue and contracting inward from the edges &mdash; but it is slow and it scars more. Her wound took around fifteen months to close. That is the trade she made knowingly: a much longer recovery in exchange for no further surgery. Her kidneys and lungs recovered, and the arm remains the lasting problem.</p></section><section class="sec" id="s6" data-t="" data-l="blame"><div class="sec-h"><span class='tstamp n'>On blame</span><h2>On whose fault it was</h2></div><p>She has been clear in interviews that she considers the infection her own fault for not cleaning the site properly, rather than a fault of the device.</p>
+    <p>Wounds do heal this way: by secondary intention, filling in from the base with new tissue and contracting inward from the edges, but it is slow and it scars more. Her wound took around fifteen months to close. That is the trade she made knowingly: a much longer recovery in exchange for no further surgery. Her kidneys and lungs recovered, and the arm remains the lasting problem.</p></section><section class="sec" id="s6" data-t="" data-l="blame"><div class="sec-h"><span class='tstamp n'>On blame</span><h2>On whose fault it was</h2></div><p>She has been clear in interviews that she considers the infection her own fault for not cleaning the site properly, rather than a fault of the device.</p>
 
     <p>She is right that the device did not fail. But it is worth saying plainly that an enormous number of people miss the swab, and essentially none of them get <em>Rhizopus</em> in their arm. What happened to her required a rare organism to land in exactly the wrong place at a moment when her defences against that particular family of moulds were down. A lapse in a routine step is not the same thing as causing this, and survivors carrying the whole weight of an outcome this rare is a common and heavy pattern.</p>
 
@@ -301,28 +301,18 @@ footer p{max-width:52ch}
     <p>Nothing here argues against using a pump. It argues for treating a site that looks or feels wrong as worth showing to someone the same day, because in the rare case where this is what it turns out to be, the timeline is unforgiving.</p></section>
       <section class="sec" id="close" data-t="" data-l="what the case teaches">
         <div class="sec-h"><span class="tstamp n">Closing the record</span><h2>What this case teaches</h2></div>
-        <p>The clearest thing in this case is why the drip failed. The fungus invades small arteries and clots them, so the tissue beyond dies &mdash; and a drug carried in blood cannot reach tissue that has no blood. Putting the antifungal straight into the wound worked because it bypassed a circulation that no longer existed. Everything else follows from the same mechanism: the damage runs deeper than the surface shows, the surgery has to be repeated because the boundary keeps moving, and saving the arm meant sacrificing the nerves running through the infected field. The popular name is the least accurate part of the story. Nothing was eaten.</p>
+        <p>The clearest thing in this case is why the drip failed. The fungus invades small arteries and clots them, so the tissue beyond dies, and a drug carried in blood cannot reach tissue that has no blood. Putting the antifungal straight into the wound worked because it bypassed a circulation that no longer existed. Everything else follows from the same mechanism: the damage runs deeper than the surface shows, the surgery has to be repeated because the boundary keeps moving, and saving the arm meant sacrificing the nerves running through the infected field. The popular name is the least accurate part of the story. Nothing was eaten.</p>
       </section>
       <div class="src"><p>Case details are drawn from Carolina Bowen's own account, given to SWNS and reported by Metro in November 2020, and are summarised here in the author's words rather than reproduced. The clinical explanation draws on published literature on cutaneous mucormycosis, including reported cases at insulin injection and pump sites, and on standard references for the pathophysiology and management of Mucorales infection. Photographs from that reporting are held by the agency and are not reproduced here. The diagram is original to MedicaseHub and may be reused freely. This article is not medical advice. Do not stop or alter diabetes treatment on the basis of it, and show any infusion site that is painful, spreading or discoloured to a clinician the same day. <a href="disclaimer.html">Read the full disclaimer</a>.</p></div>
       <div class="ad" aria-hidden="true"><div><span class="lab">Advertisement</span><div id="ezoic-pub-ad-placeholder-102"></div></div></div>
       <section class="rel">
-        <h2 class="lab">Related cases</h2>
-        <div class="case-grid"><a class="case-card" href="case-012.html">
-        <div class="case-id"><span>MC-012</span></div>
-        <h3>Purple ears</h3>
-        <p>A net-shaped rash that maps the vessels blocked underneath it.</p>
-      </a>
-      <a class="case-card" href="case-017.html">
-        <div class="case-id"><span>MC-017</span></div>
-        <h3>It looked like a virus</h3>
-        <p>He had been on the drug twelve days, so nobody suspected it.</p>
-      </a>
-      <a class="case-card" href="case-005.html">
-        <div class="case-id"><span>MC-005</span></div>
-        <h3>Viper bite coagulopathy</h3>
-        <p>His blood stopped clotting. A normal scan kept him out of theatre.</p>
-      </a></div>
-      </section>
+<h2 class="lab">Related cases</h2>
+<ol>
+<li><a class="row" href="case-012.html"><span class="meta"><span>MC-012</span><span>Diagnosis</span><span class="hasfig"></span></span><span class="ti">Purple ears: the adulterant, not the drug</span><span class="dek">A net-shaped rash, collapsing neutrophils, and antibodies pointing two ways at once.</span></a></li>
+<li><a class="row" href="case-017.html"><span class="meta"><span>MC-017</span><span>Diagnosis</span><span class="hasfig"></span></span><span class="ti">It looked like a virus. It was the medication.</span><span class="dek">He was taking lamotrigine. Much of the risk with that drug is in how fast the dose goes up.</span></a></li>
+<li><a class="row" href="case-005.html"><span class="meta"><span>MC-005</span><span>Emergency</span><span class="hasfig" title="Includes an original diagram"></span></span><span class="ti">Viper bite coagulopathy: the scan that showed nothing</span><span class="dek">Three hours after the bite his blood could no longer clot. A normal ultrasound is what kept him out of theatre.</span></a></li>
+</ol>
+</section>
       <p class="back"><a href="cases.html">&larr; All cases</a></p>
     </div>
   </div>
@@ -348,7 +338,7 @@ function set(sec){
   ticks.forEach(function(li){ li.classList.toggle('on', li.getAttribute('data-sec')===id); });
   var back=sec.classList.contains('fb');
   var rn=document.querySelector('.rail-now');
-  if(rn) rn.style.color = back ? 'var(--ink-2)' : 'var(--time)';
+  if(rn) rn.style.color = back ? 'var(--ink-2)': 'var(--time)';
   if(now) now.textContent=(back?'\u21a9 ':'')+(sec.getAttribute('data-t')||'');
   if(nowlab) nowlab.textContent=sec.getAttribute('data-l')||'';
 }

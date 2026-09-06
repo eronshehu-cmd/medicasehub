@@ -176,7 +176,7 @@ h1{font-family:var(--serif);font-size:clamp(31px,7.4vw,60px);letter-spacing:-.02
 .src .pin{font-family:var(--mono);font-size:12px;color:var(--ink);border:1px solid var(--rule);background:#fff;padding:2px 7px;border-radius:2px;white-space:nowrap}
 
 /* ---- related ---- */
-.rel{border-top:1px solid var(--rule);background:var(--sheet)}
+.rel ol{list-style:none;margin:0;padding:0}.rel .row{display:grid;grid-template-columns:minmax(0,1fr);gap:2px;padding:14px 0;text-decoration:none;color:inherit;border-bottom:1px solid var(--rule)}.rel .row:hover{background:var(--paper-2)}.rel .meta{display:flex;gap:10px;align-items:baseline;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}.rel .ti{font-family:var(--serif);font-size:19px;line-height:1.22;letter-spacing:-.01em;display:block;margin:3px 0 0;color:var(--ink)}.rel .dek{font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--ink-2);display:block;margin:4px 0 0;max-width:62ch}.rel .hasfig{display:none}.rel{border-top:1px solid var(--rule);background:var(--sheet)}
 .rel .wrap{padding:26px 20px 34px}
 .rel h2{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:400;margin-bottom:14px}
 .rel ul{list-style:none;margin:0;padding:0;display:grid;gap:0}
@@ -258,7 +258,7 @@ footer p{max-width:52ch}
   <div class="body">
     <div class="rail" id="rail"><div class="rail-now"><span id="rnow">0 h</span><i id="rnowlab">the injury</i></div><ol><li class="" data-sec="s1"><b>0 h</b><span>the injury</span></li><li class="" data-sec="s2"><b>45 min</b><span>trauma centre</span></li><li class="" data-sec="s3"><b>hours</b><span>replant or not</span></li><li class="" data-sec="s4"><b>6 months</b><span>tenolysis</span></li><li class="nt" data-sec="s5"><b>6 years</b><span>DASH 5.8</span></li></ol></div>
     <div class="prose">
-      <section class="sec" id="s2" data-t="6 h" data-l="the viability window"><div class="sec-h"><span class='tstamp'>The window · 6 h warm</span><h2>The clock</h2></div><p>Replantation is governed by ischaemia time — how long tissue survives without a blood supply. The limit is not the same for every body part, and the reason is muscle.</p>
+      <section class="sec" id="s2" data-t="6 h" data-l="the viability window"><div class="sec-h"><span class='tstamp'>The window · 6 h warm</span><h2>The clock</h2></div><p>Replantation is governed by ischaemia time, how long tissue survives without a blood supply. The limit is not the same for every body part, and the reason is muscle.</p>
 
     <p>Fingers contain tendons, bone, nerves and skin, but essentially no muscle bellies. They tolerate around 12 hours at room temperature, and up to about 24 hours if cooled properly. Anything amputated above the wrist contains muscle, and muscle is the least tolerant tissue in the body to lack of oxygen. A forearm amputation gives roughly six hours warm, or about twelve hours cooled.</p>
 
@@ -266,41 +266,31 @@ footer p{max-width:52ch}
 
     <p>Cooling roughly doubles the available time, and how it is done matters. The amputated part is wrapped in moist gauze, sealed in a bag, and the bag placed on ice. It is not put directly against ice, which causes freezing injury, and it is not submerged in water, which macerates the tissue. Getting this wrong can cost a limb that was otherwise salvageable.</p>
 
-    <p>He arrived within 45 minutes, well inside the window.</p></section><section class="sec" id="s3" data-t="decision" data-l="proximal wins"><div class="sec-h"><span class='tstamp'>The decision</span><h2>Why a forearm is replanted when a finger might not be</h2></div><p>It is counterintuitive, but the more proximal and more serious the amputation, the stronger the case for reattaching it. A single finger, particularly an index finger, is often better left alone: replantation means months of stiffness and therapy for a digit the hand can work around. A hand or forearm is different. There is no working around its absence, and no prosthesis restores what a native limb does. Wrist-level and above are therefore standard indications for replantation, and the decision has to be made fast because the clock is already running.</p></section><section class="sec" id="s3b" data-t="decision" data-l="the ethics"><div class="sec-h"><span class='tstamp n'>The harder question</span><h2>The harder question</h2></div><p>The complication in this case was not anatomical. Replantation is a long operation followed by months of hand therapy and, frequently, further surgery. It is a substantial commitment of the patient's own effort and of hospital resources. When the injury is self-inflicted and the underlying illness is untreated, a reasonable person might ask whether that commitment is justified — whether the patient will engage with rehabilitation at all, or whether the limb is at risk again.</p>
+    <p>He arrived within 45 minutes, well inside the window.</p></section><section class="sec" id="s3" data-t="decision" data-l="proximal wins"><div class="sec-h"><span class='tstamp'>The decision</span><h2>Why a forearm is replanted when a finger might not be</h2></div><p>It is counterintuitive, but the more proximal and more serious the amputation, the stronger the case for reattaching it. A single finger, particularly an index finger, is often better left alone: replantation means months of stiffness and therapy for a digit the hand can work around. A hand or forearm is different. There is no working around its absence, and no prosthesis restores what a native limb does. Wrist-level and above are therefore standard indications for replantation, and the decision has to be made fast because the clock is already running.</p></section><section class="sec" id="s3b" data-t="decision" data-l="the ethics"><div class="sec-h"><span class='tstamp n'>The harder question</span><h2>The harder question</h2></div><p>The complication in this case was not anatomical. Replantation is a long operation followed by months of hand therapy and, frequently, further surgery. It is a substantial commitment of the patient's own effort and of hospital resources. When the injury is self-inflicted and the underlying illness is untreated, a reasonable person might ask whether that commitment is justified, whether the patient will engage with rehabilitation at all, or whether the limb is at risk again.</p>
 
     <p>The published literature on these injuries is small but consistent. Across the reported cases, the overwhelming majority of patients had a diagnosable psychiatric illness, most commonly depression, bipolar disorder or schizophrenia, and around two thirds had psychotic features at the time. These are not decisions made from a settled mind. They are the product of conditions that respond to treatment.</p>
 
     <p>That reframes the question entirely. The mental state that produced the injury is treatable. The limb, once discarded, is not recoverable later. Declining to replant on the grounds of the patient's state at presentation permanently forecloses an option, on the basis of something expected to change.</p></section><section class="sec" id="s4" data-t="same day" data-l="surgery and psychiatry"><div class="sec-h"><span class='tstamp'>Same day · both arms of treatment</span><h2>What was done</h2></div><p>He underwent emergent replantation and was monitored on the microsurgery unit. Psychiatry was involved from the start rather than afterwards: he was started on medication for his depression, kept under continuous observation, and transferred to inpatient psychiatric care once he was medically cleared.</p>
 
-    <p>The surgical and psychiatric arms of the treatment ran together. That is the model the case supports, and it is worth stating plainly, because the failure mode in these presentations is to treat the limb thoroughly and the illness as an afterthought.</p></section><section class="sec" id="s5" data-t="6 years" data-l="near-normal function"><div class="sec-h"><span class='tstamp'>6 months → 6 years</span><h2>Recovery</h2></div><p>He complied well with hand therapy, but after six months the tendons had become bound down in scar and he required tenolysis — a further operation to free the flexor and extensor tendons so they could glide again. This is a common and expected step after replantation, not a sign of failure.</p>
+    <p>The surgical and psychiatric arms of the treatment ran together. That is the model the case supports, and it is worth stating plainly, because the failure mode in these presentations is to treat the limb thoroughly and the illness as an afterthought.</p></section><section class="sec" id="s5" data-t="6 years" data-l="near-normal function"><div class="sec-h"><span class='tstamp'>6 months → 6 years</span><h2>Recovery</h2></div><p>He complied well with hand therapy, but after six months the tendons had become bound down in scar and he required tenolysis, a further operation to free the flexor and extensor tendons so they could glide again. This is a common and expected step after replantation, not a sign of failure.</p>
 
     <figure class="fig"><div class="fig-h"><b>FIG 2</b><span class="lab">original diagram</span><span class="t">original diagram</span></div><div class="fig-i"><img src="images/replant-followup.jpg" loading="lazy" decoding="async" alt="The replanted left forearm and hand at follow-up. The hand is open and flat with the fingers fully extended, and the circumferential replantation scar has faded to a thin line around the distal forearm"></div><figcaption>The replanted limb at follow-up. The circumferential scar marks the level of the amputation and the repair; the hand opens flat, which is the practical measure that matters. Wall LB et al., Cureus 2019;11(10):e5858. CC BY 4.0.</figcaption></figure>
 
     <p>At six years, his DASH score was 5.8. That scale runs from 0 to 100, where 0 is no disability, so 5.8 represents near-normal function of the arm. His recovery was graded Chen Grade 1, the highest category. He was described as extremely satisfied with both the appearance and the function of the limb, and he had returned to his previous employment.</p></section>
       <section class="sec" id="close" data-t="" data-l="what the case teaches">
         <div class="sec-h"><span class="tstamp n">Closing the record</span><h2>What this case teaches</h2></div>
-        <p>Two clocks were running. One was the ischaemia window, measured in hours, which decided whether replantation was possible at all. The other was the course of an untreated illness, measured in months and years, which was the thing that actually needed fixing. The case is often read as a surgical success, and it is one. But the six-year outcome — full function, satisfaction, back at work — depended just as much on the psychiatric care starting on day one as on the microsurgery.</p>
+        <p>Two clocks were running. One was the ischaemia window, measured in hours, which decided whether replantation was possible at all. The other was the course of an untreated illness, measured in months and years, which was the thing that actually needed fixing. The case is often read as a surgical success, and it is one. But the six-year outcome: full function, satisfaction, back at work, depended just as much on the psychiatric care starting on day one as on the microsurgery.</p>
       </section>
       <div class="src"><p>Adapted from Wall LB and colleagues, &ldquo;Self-amputation of the Upper Extremity: A Case Report and Review of the Literature,&rdquo; <em>Cureus</em> 2019, published under CC BY 4.0. Details of the mechanism and circumstances of the injury have been deliberately omitted from this account. Ischaemia figures are approximate working values and vary by injury and source. The follow-up photograph is reproduced from the original paper under its CC BY 4.0 licence; photographs of the injury itself are not. This article is not medical advice. <a href="disclaimer.html">Read the full disclaimer</a>.</p></div>
       <div class="ad" aria-hidden="true"><div><span class="lab">Advertisement</span><div id="ezoic-pub-ad-placeholder-102"></div></div></div>
       <section class="rel">
-        <h2 class="lab">Related cases</h2>
-        <div class="case-grid"><a class="case-card" href="case-007.html">
-        <div class="case-id"><span>MC-007</span></div>
-        <h3>Keloid vs hypertrophic scar</h3>
-        <p>One crosses the wound edges. One does not.</p>
-      </a>
-      <a class="case-card" href="case-003.html">
-        <div class="case-id"><span>MC-003</span></div>
-        <h3>Burn scar contracture</h3>
-        <p>Ten months of healing did what the fire did not.</p>
-      </a>
-      <a class="case-card" href="case-005.html">
-        <div class="case-id"><span>MC-005</span></div>
-        <h3>Viper bite coagulopathy</h3>
-        <p>His blood stopped clotting. A normal scan kept him out of theatre.</p>
-      </a></div>
-      </section>
+<h2 class="lab">Related cases</h2>
+<ol>
+<li><a class="row" href="case-007.html"><span class="meta"><span>MC-007</span><span>Reconstruction</span><span class="hasfig"></span></span><span class="ti">Keloid vs hypertrophic scar: fifteen years untreated</span><span class="dek">Minor cuts to the jaw, no treatment available, and fifteen years for a scar to become a disability.</span></a></li>
+<li><a class="row" href="case-003.html"><span class="meta"><span>MC-003</span><span>Reconstruction</span><span class="hasfig"></span></span><span class="ti">Burn scar contracture: face healed to the chest</span><span class="dek">Ten months without a surgeon turned a survivable burn into a disfigurement that took twelve operations to reverse.</span></a></li>
+<li><a class="row" href="case-005.html"><span class="meta"><span>MC-005</span><span>Emergency</span><span class="hasfig" title="Includes an original diagram"></span></span><span class="ti">Viper bite coagulopathy: the scan that showed nothing</span><span class="dek">Three hours after the bite his blood could no longer clot. A normal ultrasound is what kept him out of theatre.</span></a></li>
+</ol>
+</section>
       <p class="back"><a href="cases.html">&larr; All cases</a></p>
     </div>
   </div>
@@ -326,7 +316,7 @@ function set(sec){
   ticks.forEach(function(li){ li.classList.toggle('on', li.getAttribute('data-sec')===id); });
   var back=sec.classList.contains('fb');
   var rn=document.querySelector('.rail-now');
-  if(rn) rn.style.color = back ? 'var(--ink-2)' : 'var(--time)';
+  if(rn) rn.style.color = back ? 'var(--ink-2)': 'var(--time)';
   if(now) now.textContent=(back?'\u21a9 ':'')+(sec.getAttribute('data-t')||'');
   if(nowlab) nowlab.textContent=sec.getAttribute('data-l')||'';
 }

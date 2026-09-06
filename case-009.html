@@ -176,7 +176,7 @@ h1{font-family:var(--serif);font-size:clamp(31px,7.4vw,60px);letter-spacing:-.02
 .src .pin{font-family:var(--mono);font-size:12px;color:var(--ink);border:1px solid var(--rule);background:#fff;padding:2px 7px;border-radius:2px;white-space:nowrap}
 
 /* ---- related ---- */
-.rel{border-top:1px solid var(--rule);background:var(--sheet)}
+.rel ol{list-style:none;margin:0;padding:0}.rel .row{display:grid;grid-template-columns:minmax(0,1fr);gap:2px;padding:14px 0;text-decoration:none;color:inherit;border-bottom:1px solid var(--rule)}.rel .row:hover{background:var(--paper-2)}.rel .meta{display:flex;gap:10px;align-items:baseline;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}.rel .ti{font-family:var(--serif);font-size:19px;line-height:1.22;letter-spacing:-.01em;display:block;margin:3px 0 0;color:var(--ink)}.rel .dek{font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--ink-2);display:block;margin:4px 0 0;max-width:62ch}.rel .hasfig{display:none}.rel{border-top:1px solid var(--rule);background:var(--sheet)}
 .rel .wrap{padding:26px 20px 34px}
 .rel h2{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:400;margin-bottom:14px}
 .rel ul{list-style:none;margin:0;padding:0;display:grid;gap:0}
@@ -250,7 +250,7 @@ footer p{max-width:52ch}
         <span class="seal">Written and reviewed by a practising physician</span>
         <span>Drafted, checked against its cited sources and reviewed for clinical accuracy before publication. <a href="editorial.html">How we work</a>.</span>
       </div>
-      <div class="fields"><dl><div class="fld"><dt>Specialty</dt><dd>Ophthalmic oncology, paediatrics</dd></div><div class="fld"><dt>Condition</dt><dd>Retinoblastoma, cancer of the developing retina</dd></div><div class="fld"><dt>Incidence</dt><dd>Roughly 1 in 15,000&ndash;20,000 live births</dd></div><div class="fld t"><dt>Age</dt><dd>Over 90% present before age 5</dd></div><div class="fld"><dt>Earliest common sign</dt><dd>Leukocoria &mdash; a white pupil reflex</dd></div><div class="fld t"><dt>Survival, early</dt><dd>Over 95%</dd></div><div class="fld t"><dt>Survival, late</dt><dd>Around 40% in low-income settings</dd></div></dl></div>
+      <div class="fields"><dl><div class="fld"><dt>Specialty</dt><dd>Ophthalmic oncology, paediatrics</dd></div><div class="fld"><dt>Condition</dt><dd>Retinoblastoma, cancer of the developing retina</dd></div><div class="fld"><dt>Incidence</dt><dd>Roughly 1 in 15,000&ndash;20,000 live births</dd></div><div class="fld t"><dt>Age</dt><dd>Over 90% present before age 5</dd></div><div class="fld"><dt>Earliest common sign</dt><dd>Leukocoria, a white pupil reflex</dd></div><div class="fld t"><dt>Survival, early</dt><dd>Over 95%</dd></div><div class="fld t"><dt>Survival, late</dt><dd>Around 40% in low-income settings</dd></div></dl></div>
       <section class="advice" aria-labelledby="ad-h"><h2 id="ad-h">If you have seen a white pupil in a photograph, now</h2><ul><li>One pupil white and the other red in the same photo needs an eye examination, not a wait-and-see.</li><li>The same applies to a new squint in a young child, or a pupil that looks cloudy in ordinary light.</li><li>Most white pupils in photographs turn out to be a flash artefact. The check is quick and non-invasive.</li><li>Any ophthalmologist can do it. You do not need a referral to ask.</li></ul><p>This is general information, not advice about your own child. <a href="disclaimer.html">Full disclaimer</a>.</p></section>
     </div>
   </header>
@@ -266,19 +266,19 @@ footer p{max-width:52ch}
 
     <figure class="fig"><div class="fig-h"><b>FIG 1</b><span class="lab">red reflex vs leukocoria</span><span class="t">original diagram</span></div><div class="fig-i"><img src="leukocoria.svg" loading="lazy" decoding="async" alt="Two eyes under a camera flash compared. The left shows a normal red pupil reflex. The right shows leukocoria, a white pupil reflex, which can be the first sign of retinoblastoma"></div><figcaption>Leukocoria often appears in one eye only, and sometimes only at certain angles, which is why it is easy to dismiss as a camera artefact.</figcaption></figure>
 
-    <p>Where retinoblastoma is recognised early, leukocoria is by far the most common reason a child is referred, accounting for roughly six in ten referrals. A squint accounts for about one in ten. A bulging eye accounts for well under one in ten.</p></section><section class="sec" id="s4" data-t="~30 mo" data-l="16 months later"><div class="sec-h"><span class='tstamp'>16 months later</span><h2>Where it is found late, the signs are different</h2></div><p>Those proportions invert in settings without early detection. There, the most common presenting sign is not a white pupil at all. It is an enlarged or protruding eye — the tumour has already grown out of the globe and into the orbit.</p>
+    <p>Where retinoblastoma is recognised early, leukocoria is by far the most common reason a child is referred, accounting for roughly six in ten referrals. A squint accounts for about one in ten. A bulging eye accounts for well under one in ten.</p></section><section class="sec" id="s4" data-t="~30 mo" data-l="16 months later"><div class="sec-h"><span class='tstamp'>16 months later</span><h2>Where it is found late, the signs are different</h2></div><p>Those proportions invert in settings without early detection. There, the most common presenting sign is not a white pupil at all. It is an enlarged or protruding eye. The tumour has already grown out of the globe and into the orbit.</p>
 
     <p>The numbers behind that shift are stark. In high-income countries the median age at diagnosis is around 14 months, and roughly 98% of children are diagnosed while the tumour is still inside the eye. In low-income countries the median age is around 30 months, close to half of children already have disease outside the eye, and nearly one in five has metastatic disease at the point of diagnosis.</p>
 
     <p>Sixteen months of difference in median age is the whole story.</p></section><section class="sec" id="s5" data-t="beyond" data-l="out of the eye"><div class="sec-h"><span class='tstamp'>Once it leaves the eye</span><h2>Why the delay is fatal</h2></div><p>Inside the eye, the tumour is contained by the sclera, the tough white outer coat. That containment is what makes early retinoblastoma curable: treatment aims at a closed compartment.</p>
 
-    <p>Once the tumour breaches the sclera, or travels along the optic nerve, that boundary is gone. It reaches the orbit, and from there the meninges, the brain, and the bloodstream. Historically only about 9% of children with orbital extension survived beyond two years. Modern combined treatment — chemotherapy, surgery and radiotherapy together — has raised five-year survival for orbital disease to above 50%, which is a genuine improvement and still far below what early detection achieves. Where the disease has spread to the central nervous system or beyond, the outlook remains very poor.</p>
+    <p>Once the tumour breaches the sclera, or travels along the optic nerve, that boundary is gone. It reaches the orbit, and from there the meninges, the brain, and the bloodstream. Historically only about 9% of children with orbital extension survived beyond two years. Modern combined treatment: chemotherapy, surgery and radiotherapy together: has raised five-year survival for orbital disease to above 50%, which is a genuine improvement and still far below what early detection achieves. Where the disease has spread to the central nervous system or beyond, the outlook remains very poor.</p>
 
     <p>Left untreated entirely, retinoblastoma is uniformly fatal, and quickly: published follow-up data show roughly a third of children dying within a year of diagnosis and essentially none surviving four years.</p></section><section class="sec" id="s5" data-t="" data-l=""><div class="sec-h"><h2>The obstacles are not only medical</h2></div><p>Late presentation is often described as a lack of awareness, which is part of it but not all of it. The documented barriers include distance from any centre able to treat a child, the cost of travel and care, a shortage of paediatric ophthalmologists, and the absence of routine infant eye screening.</p>
 
-    <p>Two further factors account for a large share of deaths and are rarely discussed. The first is abandonment of treatment: families who begin a long, expensive course of therapy far from home and cannot sustain it. The second is refusal of enucleation — removing the affected eye. When a tumour fills the globe, taking the eye is often the intervention that saves the child's life, and it is understandably one of the hardest things to consent to for a child who may otherwise seem well.</p></section><section class="sec" id="s6" data-t="now" data-l="what to do"><div class="sec-h"><span class='tstamp n'>If this is you now</span><h2>What this means for a parent</h2></div><p>If a photograph shows one pupil white and the other red, that needs an eye examination, not a wait-and-see. The same applies to a new squint in a young child, or any pupil that looks cloudy in ordinary light.</p>
+    <p>Two further factors account for a large share of deaths and are rarely discussed. The first is abandonment of treatment: families who begin a long, expensive course of therapy far from home and cannot sustain it. The second is refusal of enucleation, removing the affected eye. When a tumour fills the globe, taking the eye is often the intervention that saves the child's life, and it is understandably one of the hardest things to consent to for a child who may otherwise seem well.</p></section><section class="sec" id="s6" data-t="now" data-l="what to do"><div class="sec-h"><span class='tstamp n'>If this is you now</span><h2>What this means for a parent</h2></div><p>If a photograph shows one pupil white and the other red, that needs an eye examination, not a wait-and-see. The same applies to a new squint in a young child, or any pupil that looks cloudy in ordinary light.</p>
 
-    <p>Most white pupils in photographs turn out to be nothing — the flash angle, the camera, a reflection off the optic disc. The test to rule out the serious cause is quick, non-invasive and available from any ophthalmologist. The asymmetry is what matters: the risk of checking is nothing, and the cost of not checking is measured in years.</p></section>
+    <p>Most white pupils in photographs turn out to be nothing: the flash angle, the camera, a reflection off the optic disc. The test to rule out the serious cause is quick, non-invasive and available from any ophthalmologist. The asymmetry is what matters: the risk of checking is nothing, and the cost of not checking is measured in years.</p></section>
       <section class="sec" id="close" data-t="" data-l="what the case teaches">
         <div class="sec-h"><span class="tstamp n">Closing the record</span><h2>What this case teaches</h2></div>
         <p>Retinoblastoma is the clearest example in oncology of a disease whose outcome is set by the calendar rather than the biology. The tumour behaves identically everywhere. What differs is whether it is found while it is still inside a closed compartment. That is why the useful intervention here is not a better drug but a faster path from a parent noticing something in a photograph to a child sitting in front of an ophthalmologist.</p>
@@ -286,23 +286,13 @@ footer p{max-width:52ch}
       <div class="src"><p>Written from peer-reviewed literature on retinoblastoma epidemiology, presentation and outcomes, including published comparisons of stage at diagnosis between high- and low-income settings and reviews of extraocular disease management. Figures are drawn from those sources and vary between studies and regions. The diagram is original to MedicaseHub and may be reused freely. This article is not medical advice. If you are worried about a child's eye, arrange an examination rather than relying on anything written here. <a href="disclaimer.html">Read the full disclaimer</a>.</p></div>
       <div class="ad" aria-hidden="true"><div><span class="lab">Advertisement</span><div id="ezoic-pub-ad-placeholder-102"></div></div></div>
       <section class="rel">
-        <h2 class="lab">Related cases</h2>
-        <div class="case-grid"><a class="case-card" href="case-006.html">
-        <div class="case-id"><span>MC-006</span></div>
-        <h3>Wooden foreign body on CT</h3>
-        <p>Bamboo reads as air. The scan said gas.</p>
-      </a>
-      <a class="case-card" href="case-008.html">
-        <div class="case-id"><span>MC-008</span></div>
-        <h3>Parasitic twin</h3>
-        <p>No heart of its own, perfused entirely by its sibling.</p>
-      </a>
-      <a class="case-card" href="case-003.html">
-        <div class="case-id"><span>MC-003</span></div>
-        <h3>Burn scar contracture</h3>
-        <p>Ten months of healing did what the fire did not.</p>
-      </a></div>
-      </section>
+<h2 class="lab">Related cases</h2>
+<ol>
+<li><a class="row" href="case-006.html"><span class="meta"><span>MC-006</span><span>Diagnosis</span><span class="hasfig"></span></span><span class="ti">Wooden foreign body on CT: the scan said gas</span><span class="dek">Wood reads as air on a scan. The clue that overturned the report was an infection that would not settle.</span></a></li>
+<li><a class="row" href="case-008.html"><span class="meta"><span>MC-008</span><span>Children</span><span class="hasfig"></span></span><span class="ti">Parasitic twin: the twin with no heart</span><span class="dek">A second head with eyes and lips, and no circulation of its own. Waiting would have made her weaker, not safer.</span></a></li>
+<li><a class="row" href="case-003.html"><span class="meta"><span>MC-003</span><span>Reconstruction</span><span class="hasfig"></span></span><span class="ti">Burn scar contracture: face healed to the chest</span><span class="dek">Ten months without a surgeon turned a survivable burn into a disfigurement that took twelve operations to reverse.</span></a></li>
+</ol>
+</section>
       <p class="back"><a href="cases.html">&larr; All cases</a></p>
     </div>
   </div>
@@ -328,7 +318,7 @@ function set(sec){
   ticks.forEach(function(li){ li.classList.toggle('on', li.getAttribute('data-sec')===id); });
   var back=sec.classList.contains('fb');
   var rn=document.querySelector('.rail-now');
-  if(rn) rn.style.color = back ? 'var(--ink-2)' : 'var(--time)';
+  if(rn) rn.style.color = back ? 'var(--ink-2)': 'var(--time)';
   if(now) now.textContent=(back?'\u21a9 ':'')+(sec.getAttribute('data-t')||'');
   if(nowlab) nowlab.textContent=sec.getAttribute('data-l')||'';
 }
